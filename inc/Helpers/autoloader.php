@@ -54,6 +54,7 @@ function autoloader($resource = '')
                 break;
 
             case 'widgets':
+            case 'customizers':
             case 'blocks': // phpcs:ignore PSR2.ControlStructures.SwitchDeclaration.TerminatingComment
                 /**
                  * If there is class name provided for specific directory then load that.

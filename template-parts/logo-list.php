@@ -1,5 +1,5 @@
 <!-- Logo list section start -->
-<section class="py-[70px] lg:py-[100px] border-b-[1px] border-[#DDDDDD] dark:border-dark_accent1">
+<section class="py-[70px] lg:py-[100px] border-b-[1px] border-[#DDDDDD] dark:border-dark_accent1" id="logo-list">
     <div class="container mx-auto">
         <div class="relative">
             <div

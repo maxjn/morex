@@ -14,19 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="translator" content="https://www.rtl-theme.com/author/maxjn/products/">
-    <title>مورکس - قالب شخصی</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="<?= get_template_directory_uri() ?>/assets/images/favicon.ico">
 
     <?php get_template_directory_uri() ?>
-    <!-- Plugins css -->
-    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/mobilemenu.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/glightbox.min.css" /> -->
-    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/swiper-bundle.min.css" />
-    <!-- Tailwind css -->
-    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/styles.css" />
-    <!-- RTL Fonts -->
-    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/style.rtl.css" />
     <?php wp_head(); ?>
     <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -79,61 +68,92 @@
             <div class="container mx-auto">
                 <div class="flex justify-between items-center">
                     <div class="logo">
-                        <a href="index.html">
-                            <img class="hidden dark:block"
-                                src="<?= get_template_directory_uri() ?>/assets/images/logo-light.png" alt="">
-                            <img class="dark:hidden" src="<?= get_template_directory_uri() ?>/assets/images/logo.png"
-                                alt="">
-                        </a>
+                        <?php
+                        $light_logo = false;
+                        $dark_logo = false;
+
+                        if (get_theme_mod('logo_light')) {
+                            $light_logo = true;
+                            $light_url = wp_get_attachment_url(get_theme_mod('logo_light'));
+                        }
+                        if (get_theme_mod('logo_dark')) {
+                            $dark_logo = true;
+                            $dark_url = wp_get_attachment_url(get_theme_mod('logo_dark'));
+                        }
+
+                        if ($light_logo || $dark_logo) {
+                            echo '<a class="logo" href="' . esc_url(home_url()) . '">';
+
+                            if ($light_logo && $dark_logo) {
+                                echo '<img class="hidden dark:block" src="' . $dark_url . '" alt="' . esc_attr__('Logo', 'arco') . '">';
+                                echo '<img class="dark:hidden" src="' . $light_url . '" alt="' . esc_attr__('Logo', 'arco') . '">';
+                            } else {
+                                echo '<img src="' . ($light_logo ? $light_url : $dark_url) . '" alt="' . esc_attr__('Logo', 'arco') . '">';
+                            }
+
+                            echo '</a>';
+                        }
+                        ?>
                     </div>
                     <div class="flex items-center md:hidden">
                         <nav>
                             <ul class="flex items-center">
+                                <?php
+                                // Other sections
+                                $sections = get_theme_mod('sections', array(
+                                    'home',
+                                    'services',
+                                    'about',
+                                    'logo-list',
+                                    'resume',
+                                    'skills',
+                                    'portfolio',
+                                    'testimonials',
+                                    'blog',
+                                    'contact',
+                                ));
+
+                                $section_index = 0;
+
+                                foreach ($sections as $section) {
+
+                                    $section_index++;
+                                    if (get_theme_mod($section . '_menu_text')) {
+                                ?>
                                 <li>
-                                    <a href="#home"
-                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">خانه</a>
+                                    <a href="#<?= $section ?>"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] <?= $section_index != 1 ? 'rtl:mr-[26px] rtl:xl:mr-[44px]' : ''; ?>  relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">
+                                        <?= get_theme_mod($section . '_menu_text') ?? ''; ?>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="#about"
-                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">درباره
-                                        من</a>
-                                </li>
-                                </li>
-                                <li>
-                                    <a href="#services"
-                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">خدمات</a>
-                                </li>
-                                <li>
-                                    <a href="#portfolio"
-                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">نمونه
-                                        کار</a>
-                                </li>
-                                <li>
-                                    <a href="#blog"
-                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">وبلاگ</a>
-                                </li>
-                                <li><a href="#contact"
-                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">ارتباط
-                                        با من</a>
-                                </li>
+                                <?php }
+                                } ?>
+
                             </ul>
                         </nav>
-                        <button
-                            class="flex bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center ltr:ml-[32px] rtl:mr-[32px] transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1]">
-                            <span
-                                class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-download">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                    <polyline points="7 10 12 15 17 10"></polyline>
-                                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                                </svg>
-                            </span>
-                            <span
-                                class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">دانلود
-                                رزومه</span>
-                        </button>
+                        <?php
+                        if (get_theme_mod('resume_btn_text')) {
+                        ?>
+                        <a href="<?= get_theme_mod('resume_btn_url', '#') ?>">
+                            <button
+                                class="flex bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center ltr:ml-[32px] rtl:mr-[32px] transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1]">
+                                <span
+                                    class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-download">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                </span>
+                                <span
+                                    class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">
+                                    <?= get_theme_mod('resume_btn_text') ?>
+                                </span>
+                            </button>
+                        </a>
+                        <?php } ?>
                     </div>
                     <div class="lg:hidden">
                         <button class="offcanvas__header--menu__open--btn text-primary dark:text-white " data-offcanvas>
