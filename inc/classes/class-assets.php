@@ -39,16 +39,18 @@ class Assets
 	public function register_styles()
 	{
 		// Register styles.
-		wp_register_style('mobilemenu-css', MOREX_CSS_URI . '/mobilemenu.css', [], filemtime(MOREX_CSS_DIR_PATH . '/mobilemenu.css'), 'all');
-		wp_register_style('swiper-css', MOREX_CSS_URI . '/swiper-bundle.min.css', ['mobilemenu-css'], filemtime(MOREX_CSS_DIR_PATH . '/swiper-bundle.min.css'), 'all');
-		wp_register_style('styles-css', MOREX_CSS_URI . '/styles.css', ['swiper-css'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
-		wp_register_style('stylertl-css', MOREX_CSS_URI . '/style.rtl.css', ['styles-css'], filemtime(MOREX_CSS_DIR_PATH . '/style.rtl.css'), 'all');
+		wp_register_style('mobilemenu', MOREX_CSS_URI . '/mobilemenu.css', [], filemtime(MOREX_CSS_DIR_PATH . '/mobilemenu.css'), 'all');
+		wp_register_style('swiper', MOREX_CSS_URI . '/swiper-bundle.min.css', ['mobilemenu'], filemtime(MOREX_CSS_DIR_PATH . '/swiper-bundle.min.css'), 'all');
+		wp_register_style('styles', MOREX_CSS_URI . '/styles.css', ['swiper'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
+		wp_register_style('fonts', MOREX_CSS_URI . '/fonts/primary-' . get_theme_mod('primary_font', 'vazir') . '.css', ['styles'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
+		wp_register_style('stylertl', MOREX_CSS_URI . '/style.rtl.css', ['fonts'], filemtime(MOREX_CSS_DIR_PATH . '/style.rtl.css'), 'all');
 
 		// Enqueue Styles.
-		wp_enqueue_style('mobilemenu-css');
-		wp_enqueue_style('swiper-css');
-		wp_enqueue_style('styles-css');
-		wp_enqueue_style('stylertl-css');
+		wp_enqueue_style('mobilemenu');
+		wp_enqueue_style('swiper');
+		wp_enqueue_style('styles');
+		wp_enqueue_style('fonts');
+		wp_enqueue_style('stylertl');
 	}
 
 	public function register_scripts()

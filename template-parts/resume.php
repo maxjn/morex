@@ -1,5 +1,5 @@
 <!--  Resume section start -->
-<section class="lg:py-[100px] md:py-[70px]">
+<section class="lg:py-[100px] md:py-[70px]" id="resume">
     <div class="container mx-auto">
         <!-- Section title start -->
         <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">

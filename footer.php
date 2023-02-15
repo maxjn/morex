@@ -55,18 +55,6 @@
 
 
 <!-------- Plugins js ------>
-
-<!-- Swiper js -->
-<script src="<?= get_template_directory_uri() ?>/assets/js/swiper-bundle.min.js"></script>
-
-<!-- imagesloaded js -->
-<script src="<?= get_template_directory_uri() ?>/assets/js/imagesloaded.pkgd.min.js" defer></script>
-
-<!-- Isotope js -->
-<script src="<?= get_template_directory_uri() ?>/assets/js/isotope.pkgd.min.js" defer></script>
-
-<!-- Custom js -->
-<script src="<?= get_template_directory_uri() ?>/assets/js/script.js" defer></script>
 <?php wp_footer(); ?>
 </body>
 
