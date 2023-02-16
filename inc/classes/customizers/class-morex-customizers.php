@@ -19,6 +19,9 @@ class Morex_Customizers
         Generals::get_instance();
         Header::get_instance();
         Display_Sort::get_instance();
+        Home::get_instance();
+        Services::get_instance();
+        About::get_instance();
         // load class.
 
     }
