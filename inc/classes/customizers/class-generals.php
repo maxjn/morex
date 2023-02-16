@@ -65,5 +65,13 @@ class Generals
             'default'     => 'vazir',
             'choices'     => $fonts,
         ));
+
+        // Show Loading
+        new \Kirki\Field\Checkbox(array(
+            'settings'    => 'show_loading',
+            'label'       => esc_html__('Show Loading Animation', 'morex'),
+            'section'     => 'general_section',
+            'default'     => true,
+        ));
     }
 }

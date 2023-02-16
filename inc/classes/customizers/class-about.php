@@ -30,7 +30,7 @@ class About
         new \Kirki\Panel(
             'about_panel',
             [ //header panel
-                'priority'    => 24,
+                'priority'    => 25,
                 'title'       => esc_html__('About', 'morex'),
             ]
         );
