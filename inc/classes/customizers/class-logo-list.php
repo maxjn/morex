@@ -36,9 +36,9 @@ class Logo_List
             ]
         );
 
-        // Show Loading
+        // Show Border Bottom
         new \Kirki\Field\Checkbox(array(
-            'settings'    => 'border_bottom_check',
+            'settings'    => 'logo_border_bottom',
             'label'       => esc_html__('Show Border Bottom', 'morex'),
             'section'     => 'logo_list_section',
             'default'     => true,
