@@ -56,16 +56,17 @@ class Assets
 	public function register_scripts()
 	{
 		// Register scripts.
-		wp_register_script('swiper-js', MOREX_JS_URI . '/swiper-bundle.min.js', [], filemtime(MOREX_JS_DIR_PATH . '/swiper-bundle.min.js'), true);
-		wp_register_script('imagesloaded-js', MOREX_JS_URI . '/imagesloaded.pkgd.min.js', ['swiper-js'], filemtime(MOREX_JS_DIR_PATH . '/imagesloaded.pkgd.min.js'), true);
-		wp_register_script('isotope-js', MOREX_JS_URI . '/isotope.pkgd.min.js', ['imagesloaded-js'], filemtime(MOREX_JS_DIR_PATH . '/isotope.pkgd.min.js'), true);
-		wp_register_script('script-js', MOREX_JS_URI . '/script.js', ['isotope-js'], filemtime(MOREX_JS_DIR_PATH . '/script.js'), true);
+		wp_register_script('fontawesome', 'https://kit.fontawesome.com/7ee55f229b.js', [], false, true);
+		wp_register_script('swiper', MOREX_JS_URI . '/swiper-bundle.min.js', ['fontawesome'], filemtime(MOREX_JS_DIR_PATH . '/swiper-bundle.min.js'), true);
+		wp_register_script('imagesloaded', MOREX_JS_URI . '/imagesloaded.pkgd.min.js', ['swiper'], filemtime(MOREX_JS_DIR_PATH . '/imagesloaded.pkgd.min.js'), true);
+		wp_register_script('isotope', MOREX_JS_URI . '/isotope.pkgd.min.js', ['imagesloaded'], filemtime(MOREX_JS_DIR_PATH . '/isotope.pkgd.min.js'), true);
+		wp_register_script('script', MOREX_JS_URI . '/script.js', ['isotope'], filemtime(MOREX_JS_DIR_PATH . '/script.js'), true);
 
 
 		// Enqueue Scripts.
-		wp_enqueue_script('swiper-js');
-		wp_enqueue_script('imagesloaded-js');
-		wp_enqueue_script('isotope-js');
-		wp_enqueue_script('script-js');
+		wp_enqueue_script('swiper');
+		wp_enqueue_script('imagesloaded');
+		wp_enqueue_script('isotope');
+		wp_enqueue_script('script');
 	}
 }
