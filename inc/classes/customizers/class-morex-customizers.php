@@ -23,6 +23,7 @@ class Morex_Customizers
         Services::get_instance();
         About::get_instance();
         Logo_List::get_instance();
+        Resume::get_instance();
         // load class.
 
     }
