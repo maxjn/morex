@@ -4,10 +4,11 @@
         <!-- Section title start -->
         <div class="mb-[35px] lg:mb-[55px]">
             <div class="max-w-full max-w-full w-full text-center">
-                <span class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">نظرات</span>
+                <span
+                    class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]"><?= get_theme_mod('testimonial_sub_title_text') ?></span>
                 <h2
                     class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
-                    نظرات کارفرمایان و همکارن راجب کار من
+                    <?= get_theme_mod('testimonial_title_text') ?>
                 </h2>
             </div>
         </div>
@@ -18,226 +19,44 @@
             <div class="swiper testimonial__slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-
+                    <?php
+                    // Theme_mod First Culomn testimonials to check.
+                    $testimonials = get_theme_mod('testimonial_items');
+                    if (count($testimonials) > 0) {
+                        $counter = 0;
+                        foreach ($testimonials as $testimonial) :
+                            $counter++;
+                    ?>
                     <!-- Single slide -->
                     <div class="swiper-slide">
                         <div class="slider__inner text-center">
                             <div class="client__rating flex justify-center gap-[5px]">
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
+                                <li class="fa fa-star fill-[#ffce31] stroke-[#ffce31] text-[#E6BC13]"></li>
+                                <li class="fa fa-star fill-[#ffce31] stroke-[#ffce31] text-[#E6BC13]"></li>
+                                <li class="fa fa-star fill-[#ffce31] stroke-[#ffce31] text-[#E6BC13]"></li>
+                                <li class="fa fa-star fill-[#ffce31] stroke-[#ffce31] text-[#E6BC13]"></li>
+                                <li class="fa fa-star fill-[#ffce31] stroke-[#ffce31] text-[#E6BC13]"></li>
                             </div>
                             <div
                                 class="text-[24px] leading-8 text-paragraph dark:text-slate-200 italic mt-[20px] mb-[30px]">
-                                “لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                طراحان گرافیک است.
-                                چاپگرها و متون بلکه روزنامه و
+                                <?= $testimonial['testimonial_text'] ?>
                             </div>
                             <div>
                                 <img class="mx-auto w-[130px] h-[130px] rounded-full shadow-[0_0_50px_0_rgba(196,206,213,0.2)]"
-                                    src="<?= get_template_directory_uri() ?>/assets/images/testimonial/1.png" alt="">
+                                    src="<?= wp_get_attachment_url($testimonial['image']) ?>" alt="">
                                 <div class="mt-[25px]">
-                                    <h3 class="text-2xl text-primary dark:text-white">کامران صفری</h3>
-                                    <span class="dark:text-slate-100">مدیر</span>
+                                    <h3 class="text-2xl text-primary dark:text-white"><?= $testimonial['name'] ?></h3>
+                                    <span class="dark:text-slate-100"><?= $testimonial['position'] ?></span>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                     <!-- Single slide -->
-                    <!-- Single slide -->
-                    <div class="swiper-slide">
-                        <div class="slider__inner text-center">
-                            <div class="client__rating flex justify-center gap-[5px]">
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div
-                                class="text-[24px] leading-8 text-paragraph dark:text-slate-200 italic mt-[20px] mb-[30px]">
-                                “لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                طراحان گرافیک است.
-                                چاپگرها و متون بلکه روزنامه و
-                            </div>
-                            <div>
-                                <img class="mx-auto w-[130px] h-[130px] rounded-full shadow-[0_0_50px_0_rgba(196,206,213,0.2)]"
-                                    src="<?= get_template_directory_uri() ?>/assets/images/testimonial/1.png" alt="">
-                                <div class="mt-[25px]">
-                                    <h3 class="text-2xl text-primary dark:text-white">کامران صفری</h3>
-                                    <span class="dark:text-slate-100">مدیر</span>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                    <!-- Single slide -->
-                    <!-- Single slide -->
-                    <div class="swiper-slide">
-                        <div class="slider__inner text-center">
-                            <div class="client__rating flex justify-center gap-[5px]">
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                                <span>
-                                    <svg class="fill-[#ffce31] stroke-[#ffce31]" xmlns="http://www.w3.org/2000/svg"
-                                        width="20" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-star">
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div
-                                class="text-[24px] leading-8 text-paragraph dark:text-slate-200 italic mt-[20px] mb-[30px]">
-                                “لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                طراحان گرافیک است.
-                                چاپگرها و متون بلکه روزنامه و
-                            </div>
-                            <div>
-                                <img class="mx-auto w-[130px] h-[130px] rounded-full shadow-[0_0_50px_0_rgba(196,206,213,0.2)]"
-                                    src="<?= get_template_directory_uri() ?>/assets/images/testimonial/1.png" alt="">
-                                <div class="mt-[25px]">
-                                    <h3 class="text-2xl text-primary dark:text-white">کامران صفری</h3>
-                                    <span class="dark:text-slate-100">مدیر</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Single slide -->
+                    <?php
+                        endforeach;
+                    } ?>
 
 
                 </div>
