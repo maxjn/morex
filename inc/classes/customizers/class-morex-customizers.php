@@ -25,6 +25,11 @@ class Morex_Customizers
         Logo_List::get_instance();
         Resume::get_instance();
         Skills::get_instance();
+        Portfolio::get_instance();
+        Testimonial::get_instance();
+        Blog::get_instance();
+        Contact::get_instance();
+        Footer::get_instance();
         // load class.
 
     }

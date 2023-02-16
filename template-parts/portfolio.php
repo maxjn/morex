@@ -3,21 +3,20 @@
     class="bg-[#EFF3F7] dark:bg-dark_primary_bg pt-[70px] lg:pt-[100px] pb-[40px] lg:pb-[70px] dark:border-t dark:border-b dark:border-dark_accent1"
     id="portfolio">
     <div class="container mx-auto">
+        <!-- Section title start -->
         <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
-            <div class="max-w-full lg:max-w-[580px]  w-full">
-                <span class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">نمونه
-                    کار</span>
+            <div class="max-w-full lg:max-w-[575px]  w-full">
+                <span
+                    class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]"><?= get_theme_mod('portfolio_sub_title_text') ?></span>
                 <h2
                     class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
-                    نمونه کار ها و پروژه های انجام شده ی من.
+                    <?= get_theme_mod('portfolio_title_text') ?>
                 </h2>
             </div>
             <div class="md:grow">
                 <p class="text-[#636363] dark:text-slate-200 text-[17px] leading-[28px] lg:max-w-[472px] w-full">
-                    چاپگرها و
-                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                    نیاز و کاربردهای
-                    متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                    <?= get_theme_mod('portfolio_description') ?>
+                </p>
             </div>
         </div>
 
