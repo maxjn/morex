@@ -1,0 +1,712 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: morex\n"
+"POT-Creation-Date: 2023-02-17 17:24+0330\n"
+"PO-Revision-Date: 2023-02-17 19:05+0330\n"
+"Last-Translator: \n"
+"Language-Team: maxjn\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: comments.php:20
+msgid "comment"
+msgstr "دیدگاه"
+
+#: comments.php:54
+msgid "No comments yet. Leave the first comment."
+msgstr "هنوز دیدگاهی وجود ندارد. اولین دیدگاه را ارسال کنید."
+
+#: header.php:88 header.php:89 header.php:91 header.php:188 header.php:189
+#: header.php:191 inc/classes/customizers/class-header.php:42
+#: inc/classes/customizers/class-header.php:138
+#: inc/classes/customizers/class-header.php:140
+#: inc/classes/customizers/class-logo-list.php:54
+#: template-parts/logo-list.php:35 template-parts/logo-list.php:37
+#: template-parts/logo-list.php:39 template-parts/logo-list.php:62
+#: template-parts/logo-list.php:64 template-parts/logo-list.php:66
+msgid "Logo"
+msgstr "لوگو"
+
+#: inc/Helpers/template-tags.php:86
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "نوشته شده در %s"
+
+#: inc/Helpers/template-tags.php:101
+#, php-format
+msgctxt "post author"
+msgid " by %s"
+msgstr "توسط %s"
+
+#: inc/Helpers/template-tags.php:156
+msgid "Read more"
+msgstr "بیشتر"
+
+#: inc/Helpers/template-tags.php:225
+msgid "First"
+msgstr "اولین"
+
+#: inc/Helpers/template-tags.php:233
+msgid "Prev"
+msgstr "قبلی"
+
+#: inc/Helpers/template-tags.php:234
+msgid "Next"
+msgstr "بعدی"
+
+#: inc/Helpers/template-tags.php:240
+msgid "Last"
+msgstr "آخرین"
+
+#: inc/classes/class-comment-form.php:63
+msgid "Leave A Comment"
+msgstr "ارسال یک دیدگاه"
+
+#: inc/classes/class-comment-form.php:112
+msgid "comment-submit"
+msgstr ""
+
+#: inc/classes/class-menus.php:37
+msgid "Header Menu"
+msgstr "فهرست هدر"
+
+#: inc/classes/class-menus.php:38
+msgid "Footer Menu"
+msgstr "فهرست فوتر"
+
+#: inc/classes/customizers/class-about.php:34
+msgid "About"
+msgstr "درباره"
+
+#: inc/classes/customizers/class-about.php:41
+msgid "About Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-about.php:51
+#: inc/classes/customizers/class-about.php:79
+#: inc/classes/customizers/class-blog.php:43
+#: inc/classes/customizers/class-contact.php:51
+#: inc/classes/customizers/class-contact.php:104
+#: inc/classes/customizers/class-portfolio.php:43
+#: inc/classes/customizers/class-resume.php:51
+#: inc/classes/customizers/class-resume.php:106
+#: inc/classes/customizers/class-resume.php:145
+#: inc/classes/customizers/class-services.php:51
+#: inc/classes/customizers/class-services.php:120
+#: inc/classes/customizers/class-services.php:121
+#: inc/classes/customizers/class-skills.php:51
+#: inc/classes/customizers/class-skills.php:101
+#: inc/classes/customizers/class-skills.php:126
+#: inc/classes/customizers/class-testimonial.php:51
+msgid "Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-about.php:53
+#: inc/classes/customizers/class-services.php:53
+msgid "What I can do to help you"
+msgstr "خدمات و توانایی های من برای کمک به شما"
+
+#: inc/classes/customizers/class-about.php:61
+#: inc/classes/customizers/class-blog.php:54
+#: inc/classes/customizers/class-contact.php:62
+#: inc/classes/customizers/class-portfolio.php:54
+#: inc/classes/customizers/class-resume.php:62
+#: inc/classes/customizers/class-resume.php:110
+#: inc/classes/customizers/class-resume.php:149
+#: inc/classes/customizers/class-services.php:61
+#: inc/classes/customizers/class-skills.php:62
+#: inc/classes/customizers/class-testimonial.php:62
+msgid "Sub Title"
+msgstr "عنوان فرعی"
+
+#: inc/classes/customizers/class-about.php:63
+#: inc/classes/customizers/class-display-sort.php:55
+#: inc/classes/customizers/class-header.php:129
+#: inc/classes/customizers/class-header.php:131
+#: inc/classes/customizers/class-home.php:159
+msgid "About Me"
+msgstr "درباره من"
+
+#: inc/classes/customizers/class-about.php:71
+msgid "About Informations"
+msgstr "اطلاعات"
+
+#: inc/classes/customizers/class-about.php:81
+msgid "My Info:"
+msgstr "اطلاعات من:"
+
+#: inc/classes/customizers/class-about.php:88
+msgid "Informations"
+msgstr "اطلاعات"
+
+#: inc/classes/customizers/class-about.php:92
+msgid "Information"
+msgstr "اطلاعات"
+
+#: inc/classes/customizers/class-about.php:94
+#: inc/classes/customizers/class-contact.php:93
+msgid "Add New Info"
+msgstr "افزودن اطلاعات جدید"
+
+#: inc/classes/customizers/class-about.php:100
+#: inc/classes/customizers/class-contact.php:91
+#: inc/classes/customizers/class-contact.php:108
+msgid "Info"
+msgstr "اطلاعات"
+
+#: inc/classes/customizers/class-about.php:109
+#: inc/classes/customizers/class-header.php:81
+#: inc/classes/customizers/class-services.php:131
+msgid "Button Text"
+msgstr "متن دکمه"
+
+#: inc/classes/customizers/class-about.php:111
+msgid "Hire Me"
+msgstr "همکاری با من"
+
+#: inc/classes/customizers/class-about.php:119
+#: inc/classes/customizers/class-header.php:91
+#: inc/classes/customizers/class-home.php:167
+#: inc/classes/customizers/class-services.php:137
+msgid "Button Link"
+msgstr "لینک دکمه"
+
+#: inc/classes/customizers/class-about.php:129
+msgid "About Image"
+msgstr "تصویر"
+
+#: inc/classes/customizers/class-about.php:138
+#: inc/classes/customizers/class-testimonial.php:105
+msgid "Image"
+msgstr "تصویر"
+
+#: inc/classes/customizers/class-about.php:149
+#: inc/classes/customizers/class-home.php:121
+msgid "Top Text"
+msgstr "متن بالایی"
+
+#: inc/classes/customizers/class-about.php:151
+msgid "+27"
+msgstr "27+"
+
+#: inc/classes/customizers/class-about.php:159
+#: inc/classes/customizers/class-home.php:139
+msgid "Bottom Text"
+msgstr "متن دکمه"
+
+#: inc/classes/customizers/class-about.php:161
+msgid "Years Of Experience"
+msgstr "سال تجربه کاری"
+
+#: inc/classes/customizers/class-blog.php:34
+#: inc/classes/customizers/class-display-sort.php:61
+#: inc/classes/customizers/class-header.php:183
+#: inc/classes/customizers/class-header.php:185
+msgid "Blog"
+msgstr "وبلاگ"
+
+#: inc/classes/customizers/class-blog.php:45
+msgid "Blog Latest of News tricks & Updates"
+msgstr "آخرین مطالب و اطلاعات وبلاگ"
+
+#: inc/classes/customizers/class-blog.php:56
+msgid "My blog"
+msgstr "وبلاگ من"
+
+#: inc/classes/customizers/class-blog.php:64
+#: inc/classes/customizers/class-contact.php:72
+#: inc/classes/customizers/class-portfolio.php:64
+#: inc/classes/customizers/class-resume.php:115
+#: inc/classes/customizers/class-resume.php:154
+#: inc/classes/customizers/class-services.php:71
+#: inc/classes/customizers/class-services.php:126
+msgid "Description"
+msgstr "توضیحات"
+
+#: inc/classes/customizers/class-contact.php:34
+#: inc/classes/customizers/class-header.php:192
+#: inc/classes/customizers/class-header.php:194
+msgid "Contact"
+msgstr "ارتباط "
+
+#: inc/classes/customizers/class-contact.php:41
+msgid "Contact Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-contact.php:53
+msgid "My Contact Info"
+msgstr "اطلاعات تماس من"
+
+#: inc/classes/customizers/class-contact.php:64
+#: inc/classes/customizers/class-display-sort.php:62
+msgid "Contact Me"
+msgstr "تماس با من"
+
+#: inc/classes/customizers/class-contact.php:80
+#: inc/classes/customizers/class-contact.php:87
+msgid "Contact Info"
+msgstr "اطلاعات تماس"
+
+#: inc/classes/customizers/class-contact.php:99
+#: inc/classes/customizers/class-home.php:200
+#: inc/classes/customizers/class-resume.php:101
+#: inc/classes/customizers/class-resume.php:140
+#: inc/classes/customizers/class-services.php:115
+msgid "Icon"
+msgstr "آیکون"
+
+#: inc/classes/customizers/class-contact.php:118
+msgid "Contact Location"
+msgstr "لوکیشن"
+
+#: inc/classes/customizers/class-contact.php:127
+msgid "Location"
+msgstr "لوکیشن"
+
+#: inc/classes/customizers/class-contact.php:130
+msgid ""
+"<iframe width=\"100%\" height=\"400\" frameborder=\"0\" scrolling=\"no\" "
+"marginheight=\"0\" marginwidth=\"0\"\n"
+"                src=\"https://maps.google.com/maps?width=100%25&amp;"
+"height=440&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My"
+"%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+"\"><a\n"
+"                    href=\"https://www.maps.ie/distance-area-calculator.html"
+"\">Location</a></iframe>"
+msgstr ""
+
+#: inc/classes/customizers/class-display-sort.php:32
+msgid "Sections Sorting and Display"
+msgstr "ترتیب و نمایش بخش ها"
+
+#: inc/classes/customizers/class-display-sort.php:53
+#: inc/classes/customizers/class-header.php:111
+#: inc/classes/customizers/class-header.php:113
+#: inc/classes/customizers/class-home.php:35
+msgid "Home"
+msgstr "خانه"
+
+#: inc/classes/customizers/class-display-sort.php:54
+#: inc/classes/customizers/class-header.php:120
+#: inc/classes/customizers/class-header.php:122
+#: inc/classes/customizers/class-services.php:34
+msgid "Services"
+msgstr "خدمات"
+
+#: inc/classes/customizers/class-display-sort.php:56
+#: inc/classes/customizers/class-header.php:147
+#: inc/classes/customizers/class-header.php:149
+#: inc/classes/customizers/class-resume.php:34
+msgid "Resume"
+msgstr "رزومه"
+
+#: inc/classes/customizers/class-display-sort.php:57
+#: inc/classes/customizers/class-logo-list.php:34
+msgid "Logo List"
+msgstr "لیست برند ها"
+
+#: inc/classes/customizers/class-display-sort.php:58
+#: inc/classes/customizers/class-header.php:165
+#: inc/classes/customizers/class-header.php:167
+#: inc/classes/customizers/class-portfolio.php:34
+msgid "Portfolio"
+msgstr "نمونه کار ها"
+
+#: inc/classes/customizers/class-display-sort.php:59
+#: inc/classes/customizers/class-header.php:156
+#: inc/classes/customizers/class-header.php:158
+#: inc/classes/customizers/class-skills.php:34
+msgid "Skills"
+msgstr "مهارت ها"
+
+#: inc/classes/customizers/class-display-sort.php:60
+#: inc/classes/customizers/class-header.php:174
+#: inc/classes/customizers/class-header.php:176
+#: inc/classes/customizers/class-testimonial.php:72
+#: inc/classes/customizers/class-testimonial.php:80
+msgid "Testimonials"
+msgstr "نظرات"
+
+#: inc/classes/customizers/class-footer.php:34
+msgid "Footer"
+msgstr "فوتر"
+
+#: inc/classes/customizers/class-footer.php:43
+msgid "Copyright Text"
+msgstr "متن کپی رایت"
+
+#: inc/classes/customizers/class-footer.php:45
+msgid ""
+" published in rtl-theme  <span class=\"px-[3px] text-paragraph dark:text-"
+"white\">\n"
+"                <li class=\"fa fa-heart\"></li>\n"
+"            </span> by <span class=\" px-[3px]\"><a class=\"text-accent1 "
+"hover:font-bold\" href=\"https://www.rtl-theme.com/author/maxjn/products/"
+"\">Maxjn</a></span>© 2023"
+msgstr ""
+" منتشر شده در راستچین  <span class=\"px-[3px] text-paragraph dark:text-white"
+"\">\n"
+"                <li class=\"fa fa-heart\"></li>\n"
+"            </span> توسط <span class=\" px-[3px]\"><a class=\"text-accent1 "
+"hover:font-bold\" href=\"https://www.rtl-theme.com/author/maxjn/products/"
+"\">Maxjn</a></span>© 2023"
+
+#: inc/classes/customizers/class-generals.php:32
+msgid "Theme General Settings"
+msgstr "تنظیمات عمومی قالب"
+
+#: inc/classes/customizers/class-generals.php:63
+msgid "Main Font"
+msgstr "فونت اصلی"
+
+#: inc/classes/customizers/class-generals.php:72
+msgid "Show Loading Animation"
+msgstr "نمایش انیمیشن بارگذاری"
+
+#: inc/classes/customizers/class-header.php:35
+msgid "Header"
+msgstr "هدر"
+
+#: inc/classes/customizers/class-header.php:52
+msgid "Light Logo"
+msgstr "لوگو روشن"
+
+#: inc/classes/customizers/class-header.php:62
+msgid "Dark Logo"
+msgstr "لوگو تیره"
+
+#: inc/classes/customizers/class-header.php:73
+msgid "Resume Button"
+msgstr "دکمه دانلود رزومه"
+
+#: inc/classes/customizers/class-header.php:83
+msgid "Download Resume"
+msgstr "دانلود رزومه"
+
+#: inc/classes/customizers/class-header.php:102
+msgid "Menu Items"
+msgstr "فهرست "
+
+#: inc/classes/customizers/class-home.php:42
+msgid "Home Images"
+msgstr "تصاویر"
+
+#: inc/classes/customizers/class-home.php:52
+msgid "Main Image Light"
+msgstr "تصویر اصلی (روشن)"
+
+#: inc/classes/customizers/class-home.php:62
+msgid "Main Image Dark"
+msgstr "تصویر اصلی (تیره)"
+
+#: inc/classes/customizers/class-home.php:72
+msgid "Icon1 Image"
+msgstr "تصویر آیکون1"
+
+#: inc/classes/customizers/class-home.php:82
+msgid "Icon2 Image"
+msgstr "تصویر آیکون2"
+
+#: inc/classes/customizers/class-home.php:93
+msgid "Counter Number"
+msgstr "شمارنده"
+
+#: inc/classes/customizers/class-home.php:95
+msgid "1100+ K"
+msgstr "+1000 هزار"
+
+#: inc/classes/customizers/class-home.php:102
+msgid "Counter Label"
+msgstr "برچسب شمارنده"
+
+#: inc/classes/customizers/class-home.php:104
+msgid "completed projects"
+msgstr "پروژه تکمسل شده"
+
+#: inc/classes/customizers/class-home.php:113
+msgid "Home Description"
+msgstr "توضیحات"
+
+#: inc/classes/customizers/class-home.php:123
+msgid "Hi, I'm"
+msgstr "سلام, خوش آمدید"
+
+#: inc/classes/customizers/class-home.php:130
+msgid "Middle Text"
+msgstr "متن میانی"
+
+#: inc/classes/customizers/class-home.php:132
+msgid "Jhon Doe"
+msgstr "علی احمدی!"
+
+#: inc/classes/customizers/class-home.php:141
+msgid "A Web Designer"
+msgstr "یک طراح وب "
+
+#: inc/classes/customizers/class-home.php:149
+#: inc/classes/customizers/class-resume.php:72
+#: inc/classes/customizers/class-skills.php:72
+msgid "Description Text"
+msgstr "متن توضیحات"
+
+#: inc/classes/customizers/class-home.php:157
+msgid "Botton Text"
+msgstr "متن دکمه"
+
+#: inc/classes/customizers/class-home.php:177
+msgid "Social Text"
+msgstr "متن شبکه های اجتماعی"
+
+#: inc/classes/customizers/class-home.php:179
+msgid "Follow Me:"
+msgstr "من را دنبال کنید:"
+
+#: inc/classes/customizers/class-home.php:187
+msgid "Social Buttons"
+msgstr "دکمه های شبکه های اجتماعی"
+
+#: inc/classes/customizers/class-home.php:189
+#: inc/classes/customizers/class-resume.php:90
+#: inc/classes/customizers/class-resume.php:129
+#: inc/classes/customizers/class-services.php:90
+#: inc/classes/customizers/class-skills.php:90
+#: inc/classes/customizers/class-skills.php:115
+msgid "Use 'Fontawesome' classes as the icon text"
+msgstr ""
+"از کلاس های  کتابخانه \"Fontawesome\" برای نمایش آیکون ها استفاده کنید."
+
+#: inc/classes/customizers/class-home.php:192
+msgid "Social Button"
+msgstr "دکمه شبکه اجتماعی"
+
+#: inc/classes/customizers/class-home.php:194
+msgid "Add New Button"
+msgstr "افزودن دکمه جدید"
+
+#: inc/classes/customizers/class-home.php:205
+msgid "Link"
+msgstr "لینک"
+
+#: inc/classes/customizers/class-logo-list.php:42
+msgid "Show Border Bottom"
+msgstr "نمایش خط زیرین"
+
+#: inc/classes/customizers/class-logo-list.php:50
+msgid "Logos"
+msgstr "لوگو ها"
+
+#: inc/classes/customizers/class-logo-list.php:56
+msgid "Add New Logo"
+msgstr "افزودن لوگو جدید"
+
+#: inc/classes/customizers/class-logo-list.php:62
+msgid "Show Border"
+msgstr "نمایش خط کناری"
+
+#: inc/classes/customizers/class-logo-list.php:67
+msgid "Logo Light Top"
+msgstr "لوگو روشن (بالا)"
+
+#: inc/classes/customizers/class-logo-list.php:73
+msgid "Logo Dark Top"
+msgstr "لوگو تیره (بالا)"
+
+#: inc/classes/customizers/class-logo-list.php:80
+msgid "Logo Light Bottom"
+msgstr "لوگو روشن (پایین)"
+
+#: inc/classes/customizers/class-logo-list.php:87
+msgid "Logo Dark Bottom"
+msgstr "لوگو تیره (پایین)"
+
+#: inc/classes/customizers/class-portfolio.php:45
+msgid "My Portfolio & My Education"
+msgstr "نمونه کار ها و پروژه های انجام شده ی من."
+
+#: inc/classes/customizers/class-portfolio.php:56
+msgid "My Portfolio"
+msgstr "نمونه کار من"
+
+#: inc/classes/customizers/class-resume.php:41
+msgid "Resume Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-resume.php:53
+msgid "My Experience & Education"
+msgstr "رزومه کاری و تحصیلی "
+
+#: inc/classes/customizers/class-resume.php:64
+msgid "My Resume"
+msgstr "رزومه من"
+
+#: inc/classes/customizers/class-resume.php:80
+msgid "Resume Items"
+msgstr "آیتم ها"
+
+#: inc/classes/customizers/class-resume.php:88
+msgid "Resume First Culomn Items"
+msgstr "آیتم های اولین ستون رزومه"
+
+#: inc/classes/customizers/class-resume.php:93
+#: inc/classes/customizers/class-resume.php:132
+msgid "Resume Item"
+msgstr "آیتم"
+
+#: inc/classes/customizers/class-resume.php:95
+#: inc/classes/customizers/class-resume.php:134
+msgid "Add New Resume Item"
+msgstr "افزودن آیتم جدید"
+
+#: inc/classes/customizers/class-resume.php:120
+#: inc/classes/customizers/class-resume.php:159
+msgid "Years"
+msgstr "سال ها"
+
+#: inc/classes/customizers/class-resume.php:127
+msgid "Resume Second Culomn Items"
+msgstr "آیتم های دومین ستون رزومه"
+
+#: inc/classes/customizers/class-services.php:41
+msgid "Services Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-services.php:63
+msgid "My Services"
+msgstr "خدمات من"
+
+#: inc/classes/customizers/class-services.php:80
+msgid "Services Contents"
+msgstr "محتوا"
+
+#: inc/classes/customizers/class-services.php:88
+#: inc/classes/customizers/class-services.php:93
+msgid "Service"
+msgstr "خدمت"
+
+#: inc/classes/customizers/class-services.php:95
+msgid "Add New Service"
+msgstr "افزودن خدمت جدید"
+
+#: inc/classes/customizers/class-services.php:102
+msgid "Primary Color"
+msgstr "رنگ اصلی"
+
+#: inc/classes/customizers/class-services.php:105
+msgid "Green"
+msgstr "سبز"
+
+#: inc/classes/customizers/class-services.php:106
+msgid "Orang"
+msgstr "نارنجی"
+
+#: inc/classes/customizers/class-services.php:107
+msgid "Blue"
+msgstr "آبی"
+
+#: inc/classes/customizers/class-services.php:108
+msgid "Yellow"
+msgstr "زرد"
+
+#: inc/classes/customizers/class-services.php:109
+msgid "Pink"
+msgstr "صورتی"
+
+#: inc/classes/customizers/class-services.php:110
+msgid "Purple"
+msgstr "بنفش"
+
+#: inc/classes/customizers/class-services.php:132
+msgid "more"
+msgstr "بیشتر"
+
+#: inc/classes/customizers/class-skills.php:41
+msgid "Skills Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-skills.php:53
+msgid "My Skills And My Abilities"
+msgstr "مهارت ها و زبان های مورد استفاده من"
+
+#: inc/classes/customizers/class-skills.php:64
+msgid "My Skills"
+msgstr "مهارت های من"
+
+#: inc/classes/customizers/class-skills.php:80
+msgid "Skills Items"
+msgstr "آیتم ها"
+
+#: inc/classes/customizers/class-skills.php:88
+#: inc/classes/customizers/class-skills.php:113
+msgid "Skills First Culomn Items"
+msgstr "آیتم های اولین ستون مهارت ها"
+
+#: inc/classes/customizers/class-skills.php:93
+#: inc/classes/customizers/class-skills.php:118
+msgid "Skills Item"
+msgstr "آیتم"
+
+#: inc/classes/customizers/class-skills.php:95
+#: inc/classes/customizers/class-skills.php:120
+msgid "Add New Skill Item"
+msgstr "افزودن آیتم جدید"
+
+#: inc/classes/customizers/class-skills.php:105
+#: inc/classes/customizers/class-skills.php:130
+msgid "Percent"
+msgstr "درصد"
+
+#: inc/classes/customizers/class-testimonial.php:34
+#: inc/classes/customizers/class-testimonial.php:64
+msgid "Testimonial"
+msgstr "نظرات"
+
+#: inc/classes/customizers/class-testimonial.php:41
+msgid "Testimonial Title"
+msgstr "عنوان"
+
+#: inc/classes/customizers/class-testimonial.php:53
+msgid "What My Friends & Colleagues Say About Me"
+msgstr "آنچه همکاران و دوستانم درباره من می گویند"
+
+#: inc/classes/customizers/class-testimonial.php:84
+msgid "Testimonial Item"
+msgstr "نظر"
+
+#: inc/classes/customizers/class-testimonial.php:86
+msgid "Add New Testimonial"
+msgstr "افزودن نظر جدید"
+
+#: inc/classes/customizers/class-testimonial.php:92
+msgid "Name"
+msgstr "نام"
+
+#: inc/classes/customizers/class-testimonial.php:96
+msgid "Job Position"
+msgstr "عنوان شغلی"
+
+#: inc/classes/customizers/class-testimonial.php:101
+msgid "Testimonial Text"
+msgstr "متن نظر"
+
+#: template-parts/portfolio.php:4
+msgid "No categories"
+msgstr "بدون دسته بندی"
+
+#. Theme Name of the plugin/theme
+msgid "Morex"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "maxjn"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.rtl-theme.com/author/maxjn/"
+msgstr ""

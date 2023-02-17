@@ -16,6 +16,14 @@ class MOREX_THEME
 
 	protected function __construct()
 	{
+		/**
+		 * Load Textdomain
+		 */
+		load_theme_textdomain('morex', get_template_directory() . '/languages');
+
+
+
+
 
 		// Load class.
 		Assets::get_instance();
