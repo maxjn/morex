@@ -19,6 +19,8 @@ class MOREX_THEME
 
 		// Load class.
 		Assets::get_instance();
+		Menus::get_instance();
+		Comment_Form::get_instance();
 
 		Customizers\Morex_Customizers::get_instance();
 
@@ -57,15 +59,15 @@ class MOREX_THEME
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		// add_theme_support('post-thumbnails');
+		add_theme_support('post-thumbnails');
 
-		// add_theme_support('post-formats', array('aside', 'gallery'));
+		add_theme_support('post-formats', array('gallery'));
 
 
 		/**
 		 * Register image sizes.
 		 */
-		// add_image_size('featured-thumbnail', 350, 233, true);
+		add_image_size('featured-thumbnail', 370, 254, true);
 
 
 		// Add theme support for selective refresh for widgets.
