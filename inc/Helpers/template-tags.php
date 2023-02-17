@@ -119,7 +119,7 @@ function aquila_posted_by()
  *
  * @return bool|string
  */
-function aquila_the_excerpt($trim_character_count = 0)
+function morex_the_excerpt($trim_character_count = 0)
 {
 	$post_ID = get_the_ID();
 
@@ -133,7 +133,7 @@ function aquila_the_excerpt($trim_character_count = 0)
 		return;
 	}
 
-	$excerpt = wp_html_excerpt(get_the_excerpt($post_ID), $trim_character_count, '[...]');
+	$excerpt = wp_html_excerpt(get_the_excerpt($post_ID), $trim_character_count, '...');
 
 
 	echo $excerpt;
@@ -208,8 +208,8 @@ function aquila_the_post_pagination($current_page_no, $posts_per_page, $article_
 	$format = !empty($is_query_param_structure) ? '?page=%#%' : 'page/%#%';
 
 ?>
-<div class="mt-0 md:mt-10 mb-10 lg:my-5 flex items-center justify-end posts-navigation">
-    <?php
+	<div class="mt-0 md:mt-10 mb-10 lg:my-5 flex items-center justify-end posts-navigation">
+		<?php
 		if (1 < $total_pages && !empty($first_page_url)) {
 			printf(
 				'<span class="mr-2">Showing %1$s - %2$s Of %3$s</span>',
@@ -241,7 +241,7 @@ function aquila_the_post_pagination($current_page_no, $posts_per_page, $article_
 		}
 
 		?>
-</div>
+	</div>
 <?php
 }
 
