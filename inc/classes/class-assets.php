@@ -45,6 +45,7 @@ class Assets
 		wp_register_style('fonts', MOREX_CSS_URI . '/fonts/primary-' . get_theme_mod('primary_font', 'vazir') . '.css', ['styles'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
 		wp_register_style('stylertl', MOREX_CSS_URI . '/style.rtl.css', ['fonts'], filemtime(MOREX_CSS_DIR_PATH . '/style.rtl.css'), 'all');
 
+
 		// Enqueue Styles.
 		wp_enqueue_style('mobilemenu');
 		wp_enqueue_style('swiper');
