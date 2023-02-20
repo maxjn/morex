@@ -15,20 +15,44 @@ A one page wordpress portfolio template...
 
 ## Installing / Getting started
 
-### Initial Configuration
-
 _\*\*\*_
+
+1. Put **Morex** folder into **theme** folder of your wordpress
+
+2. Install recommended and required plugins from **Install Plugins** Tab
+
+3. Customize the **theme** for your **needs**
 
 ## Developing
 
-### Building
+## General Features
 
-## Features
+###### Customizer
 
-###### 1 Dynamic Menu
+###### Header and Footer Menu
 
-###### Dynamic Sidebars
+###### Module Blog & Portfolio
 
-###### Widgets
+## Template Parts
 
-###### Page Templates
+###### Home
+
+###### Services
+
+###### About
+
+###### Logo List
+
+###### Resume
+
+###### Skills
+
+###### Portfolio
+
+###### Portfolio
+
+###### Blog
+
+###### Contact
+
+![Logo of the project](screenshot.png)
