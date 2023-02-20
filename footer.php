@@ -1,4 +1,8 @@
 <?php
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 /**
  * Footer Template

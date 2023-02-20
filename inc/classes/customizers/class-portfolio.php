@@ -1,5 +1,5 @@
 <?php
-
+// Prevent Direct Access
 /**
  * Portfolio Settings
  *
@@ -9,6 +9,10 @@
 namespace MOREX_THEME\Inc\Customizers;
 
 use MOREX_THEME\Inc\Traits\Singleton;
+
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class Portfolio
 {
@@ -63,6 +67,20 @@ class Portfolio
                 'settings'    => 'portfolio_description',
                 'label'       => esc_html__('Description', 'morex'),
                 'section'     => 'portfolio_title_section',
+            ]
+        );
+
+        new \Kirki\Field\Number(
+            [
+                'settings' => 'portfolio_per_page',
+                'label'    => esc_html__('Show Number', 'morex'),
+                'section'  => 'portfolio_title_section',
+                'default'  => -1,
+                'priority' => 10,
+                'choices'  => [
+                    'min'  => -1,
+                    'step' => 1,
+                ],
             ]
         );
     }

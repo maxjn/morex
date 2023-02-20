@@ -1,4 +1,8 @@
 <?php
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 /**
  * Theme Functions
@@ -49,9 +53,9 @@ if (!defined('MOREX_SEARCH_RESULTS_POST_PER_PAGE')) {
 require_once MOREX_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once MOREX_DIR_PATH . '/inc/helpers/template-tags.php';
 
-function aquila_get_theme_instance()
+function morex_get_theme_instance()
 {
     \MOREX_THEME\Inc\MOREX_THEME::get_instance();
 }
 
-aquila_get_theme_instance();
+morex_get_theme_instance();

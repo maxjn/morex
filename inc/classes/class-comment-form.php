@@ -10,6 +10,10 @@
 namespace Morex_THEME\Inc;
 
 use Morex_THEME\Inc\Traits\Singleton;
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class Comment_Form
 {
@@ -58,7 +62,7 @@ class Comment_Form
     public function comment_form_customization()
     {
         //Declare Vars
-        $comment_send = 'Post Comment';
+        $comment_send = __('Post Comment', 'morex');
         $comment_reply = '  <div class="mb-4">
         <h2>' . __('Leave A Comment', 'morex') . '</h2>
     </div>';
@@ -66,12 +70,12 @@ class Comment_Form
         <h2 class="d-flex">Leave A Reply to &nbsp;  %s</h2>
     </div>';
 
-        $comment_author = 'Name';
-        $comment_email = 'Email';
-        $comment_body = 'Message';
+        $comment_author = __('Name', 'morex');
+        $comment_email = __('Email', 'morex');
+        $comment_body = __('Message', 'morex');
 
 
-        $comment_cancel = 'Cancel Reply';
+        $comment_cancel = __('Cancel Reply', 'morex');
 
         //Array
         $comments_args = array(
@@ -79,31 +83,31 @@ class Comment_Form
             'fields' => array(
                 //Author field
                 'author' => '
-                <div class="grid grid-cols-2 gap-7">
+                <div class="grid grid-cols-2 gap-7 mb-7">
                 <div>
                     <input id="author" class="w-full bg-white rounded px-5 py-2 h-11 border border-gray-300 dark:bg-transparent dark:text-slate-300
-                    dark:border dark:border-slate-600" type="text" name="author" placeholder="' . __($comment_author, 'morex') . '">
+                    dark:border dark:border-slate-600" type="text" name="author" placeholder="' . $comment_author . '">
                 </div>',
                 //Email Field
                 'email' => '
                 <div>
                 <input id="email"
                     class="w-full bg-white rounded px-5 py-2 h-11 border border-gray-300 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
-                    type="email" name="email" placeholder="' . __($comment_email, 'morex') . '">
-                </div>'
+                    type="email" name="email" placeholder="' . $comment_email . '">
+                </div></div>'
             ),
             // Change the title of send button
-            'label_submit' => __($comment_send, 'morex'),
+            'label_submit' => $comment_send,
             // Change the title of the reply section
-            'title_reply' => __($comment_reply, 'morex'),
+            'title_reply' => $comment_reply,
             // Change the title of the reply section
-            'title_reply_to' => __($comment_reply_to, 'morex'),
+            'title_reply_to' => $comment_reply_to,
             //Cancel Reply Text
-            'cancel_reply_link' => __($comment_cancel, 'morex'),
+            'cancel_reply_link' => $comment_cancel,
             // Redefine your own textarea (the comment body).
             'comment_field' => '<div class="col-span-2">
-                                     <textarea  id="comment" name="comment" class="w-full bg-white rounded px-5 py-2 h-40 border border-gray-300 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600" cols="30" rows="10" placeholder="' . __($comment_body, 'morex') . '"></textarea>
-                                     </div></div>',
+                                     <textarea  id="comment" name="comment" class="w-full bg-white rounded px-5 py-2 h-40 border border-gray-300 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600" cols="30" rows="10" placeholder="' . $comment_body . '"></textarea>
+                                     </div>',
             //Message Before Comment
             'comment_notes_before' => '',
             // Remove "Text or HTML to be displayed after the set of comment fields".

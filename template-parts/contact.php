@@ -20,26 +20,12 @@
                 <!-- Section title end -->
 
                 <!-- from inner start-->
-                <form action="#">
-                    <div class="grid grid-cols-2 gap-7">
-                        <div>
-                            <input
-                                class="w-full bg-white rounded px-5 py-2 h-11 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
-                                type="text" name="name" placeholder="نام شما">
-                        </div>
-                        <div>
-                            <input
-                                class="w-full bg-white rounded px-5 py-2 h-11 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
-                                type="email" name="email" placeholder="ایمیل شما">
-                        </div>
-                        <div class="col-span-2">
-                            <textarea
-                                class="w-full bg-white rounded px-5 py-2 h-40 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
-                                name="message" id="" cols="30" rows="10" placeholder="متن پیام"></textarea>
-                        </div>
-                    </div>
-                    <button class="btn solid-btn mt-12">ارسال درخواست</button>
-                </form>
+                <?php
+                if (get_theme_mod('contact_form_id')) {
+                    $form_id = get_theme_mod('contact_form_id');
+                    echo  do_shortcode('[contact-form-7 id="' . $form_id . '" title="فرم تماس"]');
+                }
+                ?>
                 <!-- from inner end -->
             </div>
 
@@ -78,7 +64,7 @@
         <!-- Google map start  -->
         <div class="mb-[-275px] pt-[70px] lg:pt-[100px]">
             <div style="width: 100%">
-                <?= get_theme_mod('contact_map') ?>
+                <?= get_theme_mod('contact_map_iframe')  ?>
             </div>
         </div>
         <!-- Google map send -->
