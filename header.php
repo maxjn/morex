@@ -123,11 +123,10 @@ $header_menus   = wp_get_nav_menu_items($header_menu_id);
                                 ));
 
                                 $section_index = 0;
-
                                 foreach ($sections as $section) {
 
                                     $section_index++;
-                                    if (get_theme_mod($section . '_menu_text') && is_page_template('home.php')) {
+                                    if (get_theme_mod($section . '_menu_text') && is_page_template('templates/home.php')) {
                                 ?>
                                 <li>
                                     <a href="#<?= $section ?>"

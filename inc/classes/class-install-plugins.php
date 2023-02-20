@@ -50,6 +50,11 @@ class Install_Plugins
                 'required'  => false,
             ],
             [
+                'name'      => 'One Click Demo Import',
+                'slug'      => 'one-click-demo-import',
+                'required'  => false,
+            ],
+            [
                 'name'      => 'Morex Post Type',
                 'slug'      => 'morex-post-type',
                 'source'       => 'https://github.com/maxjn/morex-post-type/archive/refs/heads/main.zip', // The plugin source.

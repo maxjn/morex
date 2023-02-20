@@ -1,19 +1,27 @@
 @font-face {
   font-family: "primary-font";
-  src: url("../../fonts/vazir/vazir-400.eot");
-  src: url("../../fonts/vazir/vazir-400.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/vazir/vazir-400.woff2") format("woff2"),
-    url("../../fonts/vazir/vazir-400.woff") format("woff"),
-    url("../../fonts/vazir/vazir-400.ttf") format("truetype");
-  font-weight: 400;
+  src: url("../../fonts/vazir/Vazir-Bold.eot");
+  src: url("../../fonts/vazir/Vazir-Blod.eot") format("embedded-opentype"),
+    url("../../fonts/vazir//Farsi-Digits/Vazir-Bold-FD.woff") format("woff"),
+    url("../../fonts/vazir/Vazir-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
-
 @font-face {
   font-family: "primary-font";
-  src: url("../../fonts/vazir/vazir-700.eot");
-  src: url("../../fonts/vazir/vazir-700.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/vazir/vazir-700.woff2") format("woff2"),
-    url("../../fonts/vazir/vazir-700.woff") format("woff"),
-    url("../../fonts/vazir/vazir-700.ttf") format("truetype");
-  font-weight: 700;
+  src: url("../../fonts/vazir/Vazir-Medium.eot");
+  src: url("../../fonts/vazir/Vazir-Medium.eot") format("embedded-opentype"),
+    url("../../fonts/vazir//Farsi-Digits/Vazir-Medium-FD.woff") format("woff"),
+    url("../../fonts/vazir/Vazir-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "primary-font";
+  src: url("../../fonts/vazir/Vazir-Light.eot");
+  src: url("../../fonts/vazir/Vazir-Light.eot") format("embedded-opentype"),
+    url("../../fonts/vazir//Farsi-Digits/Vazir-Light-FD.woff") format("woff"),
+    url("../../fonts/vazir/Vazir-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
