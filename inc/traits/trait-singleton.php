@@ -28,6 +28,11 @@
 
 namespace MOREX_THEME\Inc\Traits;
 
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 trait Singleton
 {
 

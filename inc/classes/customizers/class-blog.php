@@ -10,6 +10,11 @@ namespace MOREX_THEME\Inc\Customizers;
 
 use MOREX_THEME\Inc\Traits\Singleton;
 
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 class Blog
 {
     use Singleton;
@@ -27,12 +32,21 @@ class Blog
         /**
          * Controls.
          */
+        new \Kirki\Panel(
+            'blog_panel',
+            [ //header panel
+                'priority'    => 25,
+                'title'       => esc_html__('Blog', 'morex'),
+
+            ]
+        );
 
         new \Kirki\Section( //Title Section
             'blog_title_section',
             [ //logo section
-                'title'       => esc_html__('Blog', 'morex'),
+                'title'       => esc_html__('Title', 'morex'),
                 'priority'    => 30,
+                'panel'       => 'blog_panel',
             ]
         );
 
@@ -65,5 +79,22 @@ class Blog
                 'section'     => 'blog_title_section',
             ]
         );
+
+        new \Kirki\Section( //Title Section
+            'blog_post_section',
+            [ //logo section
+                'title'       => esc_html__('Posts', 'morex'),
+                'priority'    => 30,
+                'panel'       => 'blog_panel',
+            ]
+        );
+
+        // Show Loading
+        new \Kirki\Field\Checkbox(array(
+            'settings'    => 'show_pagination',
+            'label'       => esc_html__('Show Blog Pagination', 'morex'),
+            'section'     => 'blog_post_section',
+            'default'     => true,
+        ));
     }
 }

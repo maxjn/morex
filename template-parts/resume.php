@@ -1,3 +1,10 @@
+<?php
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+?>
 <!--  Resume section start -->
 <section class="lg:py-[100px] md:py-[70px]" id="resume">
     <div class="container mx-auto">

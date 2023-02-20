@@ -1,5 +1,5 @@
 <?php
-
+// Prevent Direct Access
 /**
  * Bootstrap the theme's customizers
  *
@@ -9,6 +9,10 @@
 namespace MOREX_THEME\Inc\Customizers;
 
 use MOREX_THEME\Inc\Traits\Singleton;
+
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class Morex_Customizers
 {

@@ -9,6 +9,10 @@
 namespace MOREX_THEME\Inc;
 
 use MOREX_THEME\Inc\Traits\Singleton;
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class Menus
 {

@@ -9,6 +9,10 @@
 namespace MOREX_THEME\Inc\Customizers;
 
 use MOREX_THEME\Inc\Traits\Singleton;
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 class Skills
 {

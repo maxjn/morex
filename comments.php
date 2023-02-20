@@ -1,4 +1,8 @@
 <?php
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 /**
  * Comments
@@ -20,20 +24,21 @@ if ($comments) {
         <?= __('comment', 'morex') ?></h4>
     <div class="mt-7">
         <?php
-            $counter=0;
-            $comment_count=count($comments);
+            $counter = 0;
+            $comment_count = count($comments);
             foreach ($comments as $comment) {
                 $counter++;
             ?>
         <div
-            class="flex gap-4 <?php ($counter != $comment_count)?' border-b':''; ?> border-gray-300 pb-7 dark:text-slate-300">
+            class="flex gap-4 <?php ($counter != $comment_count) ? ' border-b' : ''; ?> border-gray-300 pb-7 dark:text-slate-300">
             <div class="w-20">
                 <img src="<?= get_avatar_url($comment->comment_author) ?>" alt="">
             </div>
             <div>
                 <div class="flex items-center gap-3">
                     <h6 class="text-primary font-heebo dark:text-white"><?= $comment->comment_author; ?></h6>
-                    <span><?= $comment->comment_date; ?></span>
+                    <span><?php echo human_time_diff(strtotime($comment->comment_date), current_time('U')) . ' ' . __(' ago', 'morex'); ?>
+                    </span>
                 </div>
                 <p class="py-2"><?= $comment->comment_content; ?></p>
             </div>

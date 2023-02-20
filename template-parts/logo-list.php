@@ -1,3 +1,10 @@
+<?php
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+?>
 <!-- Logo list section start -->
 <section class="py-[70px] lg:py-[100px] border-b-[1px] border-[#DDDDDD] dark:border-dark_accent1" id="logo-list">
     <div class="container mx-auto">

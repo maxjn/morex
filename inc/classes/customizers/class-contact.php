@@ -10,6 +10,11 @@ namespace MOREX_THEME\Inc\Customizers;
 
 use MOREX_THEME\Inc\Traits\Singleton;
 
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 class Contact
 {
     use Singleton;
@@ -113,24 +118,41 @@ class Contact
         ));
 
         new \Kirki\Section( //Title Section
-            'contact_location',
+            'contact_form_section',
             [ //logo section
-                'title'       => esc_html__('Contact Location', 'morex'),
+                'title'       => esc_html__('Contact Form', 'morex'),
+                'panel'       => 'contact_panel',
+                'priority'    => 20,
+            ]
+        );
+        new \Kirki\Field\Text(
+            [
+                'settings' => 'contact_form_id',
+                'label'    => esc_html__('Form Id', 'morex'),
+                'section'  => 'contact_form_section',
+                'priority' => 10,
+            ]
+        );
+
+        new \Kirki\Section( //Title Section
+            'contact_map',
+            [ //logo section
+                'title'       => esc_html__('Contact Map', 'morex'),
                 'panel'       => 'contact_panel',
                 'priority'    => 20,
             ]
         );
 
-        new \Kirki\Field\Textarea(
-            [
-                'settings'    => 'contact_map',
-                'label'       => esc_html__('Location', 'morex'),
-                'section'     => 'contact_location',
-                'description' => 'add iframe tag',
-                'default' => __('<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://maps.google.com/maps?width=100%25&amp;height=440&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                    href="https://www.maps.ie/distance-area-calculator.html">Location</a></iframe>', 'morex'),
-            ]
-        );
+        // Iframe Code
+        new \Kirki\Field\Code(array(
+            'settings' => 'contact_map_iframe',
+            'label'    => esc_html__('iframe Code', 'arco'),
+            'section'  => 'contact_map',
+            'default'  => '<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+    src="https://maps.google.com/maps?width=100%25&amp;height=440&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>',
+            'choices'     => array(
+                'language' => 'html',
+            ),
+        ));
     }
 }

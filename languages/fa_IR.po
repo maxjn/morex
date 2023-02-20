@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: morex\n"
-"POT-Creation-Date: 2023-02-17 17:24+0330\n"
-"PO-Revision-Date: 2023-02-17 19:05+0330\n"
+"POT-Creation-Date: 2023-02-19 20:24+0330\n"
+"PO-Revision-Date: 2023-02-19 20:28+0330\n"
 "Last-Translator: \n"
 "Language-Team: maxjn\n"
 "Language: fa_IR\n"
@@ -13,336 +13,343 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: morex.pot\n"
 
-#: comments.php:20
+#: comments.php:24
 msgid "comment"
 msgstr "دیدگاه"
 
-#: comments.php:54
+#: comments.php:39
+msgid " ago"
+msgstr "پیش"
+
+#: comments.php:58
 msgid "No comments yet. Leave the first comment."
 msgstr "هنوز دیدگاهی وجود ندارد. اولین دیدگاه را ارسال کنید."
 
-#: header.php:88 header.php:89 header.php:91 header.php:188 header.php:189
-#: header.php:191 inc/classes/customizers/class-header.php:42
-#: inc/classes/customizers/class-header.php:138
-#: inc/classes/customizers/class-header.php:140
-#: inc/classes/customizers/class-logo-list.php:54
-#: template-parts/logo-list.php:35 template-parts/logo-list.php:37
-#: template-parts/logo-list.php:39 template-parts/logo-list.php:62
-#: template-parts/logo-list.php:64 template-parts/logo-list.php:66
+#: header.php:91 header.php:92 header.php:94 header.php:191 header.php:192
+#: header.php:194 inc/classes/customizers/class-header.php:47
+#: inc/classes/customizers/class-header.php:143
+#: inc/classes/customizers/class-header.php:145
+#: inc/classes/customizers/class-logo-list.php:59
+#: template-parts/logo-list.php:42 template-parts/logo-list.php:44
+#: template-parts/logo-list.php:46 template-parts/logo-list.php:69
+#: template-parts/logo-list.php:71 template-parts/logo-list.php:73
 msgid "Logo"
 msgstr "لوگو"
 
-#: inc/Helpers/template-tags.php:86
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "نوشته شده در %s"
-
-#: inc/Helpers/template-tags.php:101
-#, php-format
-msgctxt "post author"
-msgid " by %s"
-msgstr "توسط %s"
-
-#: inc/Helpers/template-tags.php:156
-msgid "Read more"
-msgstr "بیشتر"
-
-#: inc/Helpers/template-tags.php:225
-msgid "First"
-msgstr "اولین"
-
-#: inc/Helpers/template-tags.php:233
-msgid "Prev"
+#: inc/Helpers/template-tags.php:102
+msgid "Previous"
 msgstr "قبلی"
 
-#: inc/Helpers/template-tags.php:234
+#: inc/Helpers/template-tags.php:103
 msgid "Next"
 msgstr "بعدی"
 
-#: inc/Helpers/template-tags.php:240
-msgid "Last"
-msgstr "آخرین"
+#: inc/classes/class-comment-form.php:65
+msgid "Post Comment"
+msgstr "ارسال دیدگاه"
 
-#: inc/classes/class-comment-form.php:63
+#: inc/classes/class-comment-form.php:67
 msgid "Leave A Comment"
 msgstr "ارسال یک دیدگاه"
 
-#: inc/classes/class-comment-form.php:112
+#: inc/classes/class-comment-form.php:73
+#: inc/classes/customizers/class-testimonial.php:97
+msgid "Name"
+msgstr "نام"
+
+#: inc/classes/class-comment-form.php:74
+msgid "Email"
+msgstr "ایمیل"
+
+#: inc/classes/class-comment-form.php:75
+msgid "Message"
+msgstr "متن دیدگاه"
+
+#: inc/classes/class-comment-form.php:78
+msgid "Cancel Reply"
+msgstr "لغو پاسخ"
+
+#: inc/classes/class-comment-form.php:116
 msgid "comment-submit"
 msgstr ""
 
-#: inc/classes/class-menus.php:37
+#: inc/classes/class-menus.php:41
 msgid "Header Menu"
 msgstr "فهرست هدر"
 
-#: inc/classes/class-menus.php:38
+#: inc/classes/class-menus.php:42
 msgid "Footer Menu"
 msgstr "فهرست فوتر"
 
-#: inc/classes/customizers/class-about.php:34
+#: inc/classes/customizers/class-about.php:39
 msgid "About"
 msgstr "درباره"
 
-#: inc/classes/customizers/class-about.php:41
+#: inc/classes/customizers/class-about.php:46
 msgid "About Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-about.php:51
-#: inc/classes/customizers/class-about.php:79
-#: inc/classes/customizers/class-blog.php:43
-#: inc/classes/customizers/class-contact.php:51
-#: inc/classes/customizers/class-contact.php:104
-#: inc/classes/customizers/class-portfolio.php:43
-#: inc/classes/customizers/class-resume.php:51
-#: inc/classes/customizers/class-resume.php:106
-#: inc/classes/customizers/class-resume.php:145
-#: inc/classes/customizers/class-services.php:51
-#: inc/classes/customizers/class-services.php:120
-#: inc/classes/customizers/class-services.php:121
-#: inc/classes/customizers/class-skills.php:51
-#: inc/classes/customizers/class-skills.php:101
-#: inc/classes/customizers/class-skills.php:126
-#: inc/classes/customizers/class-testimonial.php:51
+#: inc/classes/customizers/class-about.php:56
+#: inc/classes/customizers/class-about.php:84
+#: inc/classes/customizers/class-blog.php:47
+#: inc/classes/customizers/class-blog.php:57
+#: inc/classes/customizers/class-contact.php:56
+#: inc/classes/customizers/class-contact.php:109
+#: inc/classes/customizers/class-portfolio.php:47
+#: inc/classes/customizers/class-resume.php:56
+#: inc/classes/customizers/class-resume.php:111
+#: inc/classes/customizers/class-resume.php:150
+#: inc/classes/customizers/class-services.php:56
+#: inc/classes/customizers/class-services.php:125
+#: inc/classes/customizers/class-services.php:126
+#: inc/classes/customizers/class-skills.php:55
+#: inc/classes/customizers/class-skills.php:105
+#: inc/classes/customizers/class-skills.php:130
+#: inc/classes/customizers/class-testimonial.php:56
 msgid "Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-about.php:53
-#: inc/classes/customizers/class-services.php:53
+#: inc/classes/customizers/class-about.php:58
+#: inc/classes/customizers/class-services.php:58
 msgid "What I can do to help you"
 msgstr "خدمات و توانایی های من برای کمک به شما"
 
-#: inc/classes/customizers/class-about.php:61
-#: inc/classes/customizers/class-blog.php:54
-#: inc/classes/customizers/class-contact.php:62
-#: inc/classes/customizers/class-portfolio.php:54
-#: inc/classes/customizers/class-resume.php:62
-#: inc/classes/customizers/class-resume.php:110
-#: inc/classes/customizers/class-resume.php:149
-#: inc/classes/customizers/class-services.php:61
-#: inc/classes/customizers/class-skills.php:62
-#: inc/classes/customizers/class-testimonial.php:62
+#: inc/classes/customizers/class-about.php:66
+#: inc/classes/customizers/class-blog.php:68
+#: inc/classes/customizers/class-contact.php:67
+#: inc/classes/customizers/class-portfolio.php:58
+#: inc/classes/customizers/class-resume.php:67
+#: inc/classes/customizers/class-resume.php:115
+#: inc/classes/customizers/class-resume.php:154
+#: inc/classes/customizers/class-services.php:66
+#: inc/classes/customizers/class-skills.php:66
+#: inc/classes/customizers/class-testimonial.php:67
 msgid "Sub Title"
 msgstr "عنوان فرعی"
 
-#: inc/classes/customizers/class-about.php:63
-#: inc/classes/customizers/class-display-sort.php:55
-#: inc/classes/customizers/class-header.php:129
-#: inc/classes/customizers/class-header.php:131
-#: inc/classes/customizers/class-home.php:159
+#: inc/classes/customizers/class-about.php:68
+#: inc/classes/customizers/class-display-sort.php:60
+#: inc/classes/customizers/class-header.php:134
+#: inc/classes/customizers/class-header.php:136
+#: inc/classes/customizers/class-home.php:164
 msgid "About Me"
 msgstr "درباره من"
 
-#: inc/classes/customizers/class-about.php:71
+#: inc/classes/customizers/class-about.php:76
 msgid "About Informations"
 msgstr "اطلاعات"
 
-#: inc/classes/customizers/class-about.php:81
+#: inc/classes/customizers/class-about.php:86
 msgid "My Info:"
 msgstr "اطلاعات من:"
 
-#: inc/classes/customizers/class-about.php:88
+#: inc/classes/customizers/class-about.php:93
 msgid "Informations"
 msgstr "اطلاعات"
 
-#: inc/classes/customizers/class-about.php:92
+#: inc/classes/customizers/class-about.php:97
 msgid "Information"
 msgstr "اطلاعات"
 
-#: inc/classes/customizers/class-about.php:94
-#: inc/classes/customizers/class-contact.php:93
+#: inc/classes/customizers/class-about.php:99
+#: inc/classes/customizers/class-contact.php:98
 msgid "Add New Info"
 msgstr "افزودن اطلاعات جدید"
 
-#: inc/classes/customizers/class-about.php:100
-#: inc/classes/customizers/class-contact.php:91
-#: inc/classes/customizers/class-contact.php:108
+#: inc/classes/customizers/class-about.php:105
+#: inc/classes/customizers/class-contact.php:96
+#: inc/classes/customizers/class-contact.php:113
 msgid "Info"
 msgstr "اطلاعات"
 
-#: inc/classes/customizers/class-about.php:109
-#: inc/classes/customizers/class-header.php:81
-#: inc/classes/customizers/class-services.php:131
+#: inc/classes/customizers/class-about.php:114
+#: inc/classes/customizers/class-header.php:86
+#: inc/classes/customizers/class-services.php:136
 msgid "Button Text"
 msgstr "متن دکمه"
 
-#: inc/classes/customizers/class-about.php:111
+#: inc/classes/customizers/class-about.php:116
 msgid "Hire Me"
 msgstr "همکاری با من"
 
-#: inc/classes/customizers/class-about.php:119
-#: inc/classes/customizers/class-header.php:91
-#: inc/classes/customizers/class-home.php:167
-#: inc/classes/customizers/class-services.php:137
+#: inc/classes/customizers/class-about.php:124
+#: inc/classes/customizers/class-header.php:96
+#: inc/classes/customizers/class-home.php:172
+#: inc/classes/customizers/class-services.php:142
 msgid "Button Link"
 msgstr "لینک دکمه"
 
-#: inc/classes/customizers/class-about.php:129
+#: inc/classes/customizers/class-about.php:134
 msgid "About Image"
 msgstr "تصویر"
 
-#: inc/classes/customizers/class-about.php:138
-#: inc/classes/customizers/class-testimonial.php:105
+#: inc/classes/customizers/class-about.php:143
+#: inc/classes/customizers/class-testimonial.php:110
 msgid "Image"
 msgstr "تصویر"
 
-#: inc/classes/customizers/class-about.php:149
-#: inc/classes/customizers/class-home.php:121
+#: inc/classes/customizers/class-about.php:154
+#: inc/classes/customizers/class-home.php:126
 msgid "Top Text"
 msgstr "متن بالایی"
 
-#: inc/classes/customizers/class-about.php:151
+#: inc/classes/customizers/class-about.php:156
 msgid "+27"
 msgstr "27+"
 
-#: inc/classes/customizers/class-about.php:159
-#: inc/classes/customizers/class-home.php:139
+#: inc/classes/customizers/class-about.php:164
+#: inc/classes/customizers/class-home.php:144
 msgid "Bottom Text"
 msgstr "متن دکمه"
 
-#: inc/classes/customizers/class-about.php:161
+#: inc/classes/customizers/class-about.php:166
 msgid "Years Of Experience"
 msgstr "سال تجربه کاری"
 
-#: inc/classes/customizers/class-blog.php:34
-#: inc/classes/customizers/class-display-sort.php:61
-#: inc/classes/customizers/class-header.php:183
-#: inc/classes/customizers/class-header.php:185
+#: inc/classes/customizers/class-blog.php:39
+#: inc/classes/customizers/class-display-sort.php:66
+#: inc/classes/customizers/class-header.php:188
+#: inc/classes/customizers/class-header.php:190
 msgid "Blog"
 msgstr "وبلاگ"
 
-#: inc/classes/customizers/class-blog.php:45
+#: inc/classes/customizers/class-blog.php:59
 msgid "Blog Latest of News tricks & Updates"
 msgstr "آخرین مطالب و اطلاعات وبلاگ"
 
-#: inc/classes/customizers/class-blog.php:56
+#: inc/classes/customizers/class-blog.php:70
 msgid "My blog"
 msgstr "وبلاگ من"
 
-#: inc/classes/customizers/class-blog.php:64
-#: inc/classes/customizers/class-contact.php:72
-#: inc/classes/customizers/class-portfolio.php:64
-#: inc/classes/customizers/class-resume.php:115
-#: inc/classes/customizers/class-resume.php:154
-#: inc/classes/customizers/class-services.php:71
-#: inc/classes/customizers/class-services.php:126
+#: inc/classes/customizers/class-blog.php:78
+#: inc/classes/customizers/class-contact.php:77
+#: inc/classes/customizers/class-portfolio.php:68
+#: inc/classes/customizers/class-resume.php:120
+#: inc/classes/customizers/class-resume.php:159
+#: inc/classes/customizers/class-services.php:76
+#: inc/classes/customizers/class-services.php:131
 msgid "Description"
 msgstr "توضیحات"
 
-#: inc/classes/customizers/class-contact.php:34
-#: inc/classes/customizers/class-header.php:192
-#: inc/classes/customizers/class-header.php:194
-msgid "Contact"
-msgstr "ارتباط "
+#: inc/classes/customizers/class-blog.php:86
+msgid "Posts"
+msgstr "نوشته ها"
 
-#: inc/classes/customizers/class-contact.php:41
+#: inc/classes/customizers/class-blog.php:95
+msgid "Show Blog Pagination"
+msgstr "نمایش انیمیشن بارگزاری"
+
+#: inc/classes/customizers/class-contact.php:39
+#: inc/classes/customizers/class-header.php:197
+#: inc/classes/customizers/class-header.php:199
+msgid "Contact"
+msgstr "تماس"
+
+#: inc/classes/customizers/class-contact.php:46
 msgid "Contact Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-contact.php:53
+#: inc/classes/customizers/class-contact.php:58
 msgid "My Contact Info"
 msgstr "اطلاعات تماس من"
 
-#: inc/classes/customizers/class-contact.php:64
-#: inc/classes/customizers/class-display-sort.php:62
+#: inc/classes/customizers/class-contact.php:69
+#: inc/classes/customizers/class-display-sort.php:67
 msgid "Contact Me"
 msgstr "تماس با من"
 
-#: inc/classes/customizers/class-contact.php:80
-#: inc/classes/customizers/class-contact.php:87
+#: inc/classes/customizers/class-contact.php:85
+#: inc/classes/customizers/class-contact.php:92
 msgid "Contact Info"
 msgstr "اطلاعات تماس"
 
-#: inc/classes/customizers/class-contact.php:99
-#: inc/classes/customizers/class-home.php:200
-#: inc/classes/customizers/class-resume.php:101
-#: inc/classes/customizers/class-resume.php:140
-#: inc/classes/customizers/class-services.php:115
+#: inc/classes/customizers/class-contact.php:104
+#: inc/classes/customizers/class-home.php:205
+#: inc/classes/customizers/class-resume.php:106
+#: inc/classes/customizers/class-resume.php:145
+#: inc/classes/customizers/class-services.php:120
 msgid "Icon"
 msgstr "آیکون"
 
-#: inc/classes/customizers/class-contact.php:118
-msgid "Contact Location"
-msgstr "لوکیشن"
+#: inc/classes/customizers/class-contact.php:123
+msgid "Contact Form"
+msgstr "فرم تماس"
 
-#: inc/classes/customizers/class-contact.php:127
-msgid "Location"
-msgstr "لوکیشن"
+#: inc/classes/customizers/class-contact.php:131
+msgid "Form Id"
+msgstr "آیدی فرم تماس"
 
-#: inc/classes/customizers/class-contact.php:130
-msgid ""
-"<iframe width=\"100%\" height=\"400\" frameborder=\"0\" scrolling=\"no\" "
-"marginheight=\"0\" marginwidth=\"0\"\n"
-"                src=\"https://maps.google.com/maps?width=100%25&amp;"
-"height=440&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My"
-"%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-"\"><a\n"
-"                    href=\"https://www.maps.ie/distance-area-calculator.html"
-"\">Location</a></iframe>"
-msgstr ""
+#: inc/classes/customizers/class-contact.php:140
+msgid "Contact Map"
+msgstr "نقشه"
 
-#: inc/classes/customizers/class-display-sort.php:32
+#: inc/classes/customizers/class-contact.php:149
+msgid "iframe Code"
+msgstr "کد iframe"
+
+#: inc/classes/customizers/class-display-sort.php:37
 msgid "Sections Sorting and Display"
 msgstr "ترتیب و نمایش بخش ها"
 
-#: inc/classes/customizers/class-display-sort.php:53
-#: inc/classes/customizers/class-header.php:111
-#: inc/classes/customizers/class-header.php:113
-#: inc/classes/customizers/class-home.php:35
+#: inc/classes/customizers/class-display-sort.php:58
+#: inc/classes/customizers/class-header.php:116
+#: inc/classes/customizers/class-header.php:118
+#: inc/classes/customizers/class-home.php:40
 msgid "Home"
 msgstr "خانه"
 
-#: inc/classes/customizers/class-display-sort.php:54
-#: inc/classes/customizers/class-header.php:120
-#: inc/classes/customizers/class-header.php:122
-#: inc/classes/customizers/class-services.php:34
+#: inc/classes/customizers/class-display-sort.php:59
+#: inc/classes/customizers/class-header.php:125
+#: inc/classes/customizers/class-header.php:127
+#: inc/classes/customizers/class-services.php:39
 msgid "Services"
 msgstr "خدمات"
 
-#: inc/classes/customizers/class-display-sort.php:56
-#: inc/classes/customizers/class-header.php:147
-#: inc/classes/customizers/class-header.php:149
-#: inc/classes/customizers/class-resume.php:34
+#: inc/classes/customizers/class-display-sort.php:61
+#: inc/classes/customizers/class-header.php:152
+#: inc/classes/customizers/class-header.php:154
+#: inc/classes/customizers/class-resume.php:39
 msgid "Resume"
 msgstr "رزومه"
 
-#: inc/classes/customizers/class-display-sort.php:57
-#: inc/classes/customizers/class-logo-list.php:34
+#: inc/classes/customizers/class-display-sort.php:62
+#: inc/classes/customizers/class-logo-list.php:39
 msgid "Logo List"
 msgstr "لیست برند ها"
 
-#: inc/classes/customizers/class-display-sort.php:58
-#: inc/classes/customizers/class-header.php:165
-#: inc/classes/customizers/class-header.php:167
-#: inc/classes/customizers/class-portfolio.php:34
+#: inc/classes/customizers/class-display-sort.php:63
+#: inc/classes/customizers/class-header.php:170
+#: inc/classes/customizers/class-header.php:172
+#: inc/classes/customizers/class-portfolio.php:38
 msgid "Portfolio"
 msgstr "نمونه کار ها"
 
-#: inc/classes/customizers/class-display-sort.php:59
-#: inc/classes/customizers/class-header.php:156
-#: inc/classes/customizers/class-header.php:158
-#: inc/classes/customizers/class-skills.php:34
+#: inc/classes/customizers/class-display-sort.php:64
+#: inc/classes/customizers/class-header.php:161
+#: inc/classes/customizers/class-header.php:163
+#: inc/classes/customizers/class-skills.php:38
 msgid "Skills"
 msgstr "مهارت ها"
 
-#: inc/classes/customizers/class-display-sort.php:60
-#: inc/classes/customizers/class-header.php:174
-#: inc/classes/customizers/class-header.php:176
-#: inc/classes/customizers/class-testimonial.php:72
-#: inc/classes/customizers/class-testimonial.php:80
+#: inc/classes/customizers/class-display-sort.php:65
+#: inc/classes/customizers/class-header.php:179
+#: inc/classes/customizers/class-header.php:181
+#: inc/classes/customizers/class-testimonial.php:77
+#: inc/classes/customizers/class-testimonial.php:85
 msgid "Testimonials"
 msgstr "نظرات"
 
-#: inc/classes/customizers/class-footer.php:34
+#: inc/classes/customizers/class-footer.php:39
 msgid "Footer"
 msgstr "فوتر"
 
-#: inc/classes/customizers/class-footer.php:43
+#: inc/classes/customizers/class-footer.php:48
 msgid "Copyright Text"
 msgstr "متن کپی رایت"
 
-#: inc/classes/customizers/class-footer.php:45
+#: inc/classes/customizers/class-footer.php:50
 msgid ""
 " published in rtl-theme  <span class=\"px-[3px] text-paragraph dark:text-"
 "white\">\n"
@@ -358,344 +365,807 @@ msgstr ""
 "hover:font-bold\" href=\"https://www.rtl-theme.com/author/maxjn/products/"
 "\">Maxjn</a></span>© 2023"
 
-#: inc/classes/customizers/class-generals.php:32
+#: inc/classes/customizers/class-generals.php:37
 msgid "Theme General Settings"
 msgstr "تنظیمات عمومی قالب"
 
-#: inc/classes/customizers/class-generals.php:63
+#: inc/classes/customizers/class-generals.php:68
 msgid "Main Font"
 msgstr "فونت اصلی"
 
-#: inc/classes/customizers/class-generals.php:72
+#: inc/classes/customizers/class-generals.php:77
 msgid "Show Loading Animation"
 msgstr "نمایش انیمیشن بارگذاری"
 
-#: inc/classes/customizers/class-header.php:35
+#: inc/classes/customizers/class-header.php:40
 msgid "Header"
 msgstr "هدر"
 
-#: inc/classes/customizers/class-header.php:52
+#: inc/classes/customizers/class-header.php:57
 msgid "Light Logo"
 msgstr "لوگو روشن"
 
-#: inc/classes/customizers/class-header.php:62
+#: inc/classes/customizers/class-header.php:67
 msgid "Dark Logo"
 msgstr "لوگو تیره"
 
-#: inc/classes/customizers/class-header.php:73
+#: inc/classes/customizers/class-header.php:78
 msgid "Resume Button"
 msgstr "دکمه دانلود رزومه"
 
-#: inc/classes/customizers/class-header.php:83
+#: inc/classes/customizers/class-header.php:88
 msgid "Download Resume"
 msgstr "دانلود رزومه"
 
-#: inc/classes/customizers/class-header.php:102
+#: inc/classes/customizers/class-header.php:107
 msgid "Menu Items"
-msgstr "فهرست "
+msgstr "فهرست"
 
-#: inc/classes/customizers/class-home.php:42
+#: inc/classes/customizers/class-home.php:47
 msgid "Home Images"
 msgstr "تصاویر"
 
-#: inc/classes/customizers/class-home.php:52
+#: inc/classes/customizers/class-home.php:57
 msgid "Main Image Light"
 msgstr "تصویر اصلی (روشن)"
 
-#: inc/classes/customizers/class-home.php:62
+#: inc/classes/customizers/class-home.php:67
 msgid "Main Image Dark"
 msgstr "تصویر اصلی (تیره)"
 
-#: inc/classes/customizers/class-home.php:72
+#: inc/classes/customizers/class-home.php:77
 msgid "Icon1 Image"
 msgstr "تصویر آیکون1"
 
-#: inc/classes/customizers/class-home.php:82
+#: inc/classes/customizers/class-home.php:87
 msgid "Icon2 Image"
 msgstr "تصویر آیکون2"
 
-#: inc/classes/customizers/class-home.php:93
+#: inc/classes/customizers/class-home.php:98
 msgid "Counter Number"
 msgstr "شمارنده"
 
-#: inc/classes/customizers/class-home.php:95
+#: inc/classes/customizers/class-home.php:100
 msgid "1100+ K"
 msgstr "+1000 هزار"
 
-#: inc/classes/customizers/class-home.php:102
+#: inc/classes/customizers/class-home.php:107
 msgid "Counter Label"
 msgstr "برچسب شمارنده"
 
-#: inc/classes/customizers/class-home.php:104
+#: inc/classes/customizers/class-home.php:109
 msgid "completed projects"
 msgstr "پروژه تکمسل شده"
 
-#: inc/classes/customizers/class-home.php:113
+#: inc/classes/customizers/class-home.php:118
 msgid "Home Description"
 msgstr "توضیحات"
 
-#: inc/classes/customizers/class-home.php:123
+#: inc/classes/customizers/class-home.php:128
 msgid "Hi, I'm"
 msgstr "سلام, خوش آمدید"
 
-#: inc/classes/customizers/class-home.php:130
+#: inc/classes/customizers/class-home.php:135
 msgid "Middle Text"
 msgstr "متن میانی"
 
-#: inc/classes/customizers/class-home.php:132
+#: inc/classes/customizers/class-home.php:137
 msgid "Jhon Doe"
-msgstr "علی احمدی!"
+msgstr "علی احمدی"
 
-#: inc/classes/customizers/class-home.php:141
+#: inc/classes/customizers/class-home.php:146
 msgid "A Web Designer"
-msgstr "یک طراح وب "
+msgstr "یک طراح وب"
 
-#: inc/classes/customizers/class-home.php:149
-#: inc/classes/customizers/class-resume.php:72
-#: inc/classes/customizers/class-skills.php:72
+#: inc/classes/customizers/class-home.php:154
+#: inc/classes/customizers/class-resume.php:77
+#: inc/classes/customizers/class-skills.php:76
 msgid "Description Text"
 msgstr "متن توضیحات"
 
-#: inc/classes/customizers/class-home.php:157
+#: inc/classes/customizers/class-home.php:162
 msgid "Botton Text"
 msgstr "متن دکمه"
 
-#: inc/classes/customizers/class-home.php:177
+#: inc/classes/customizers/class-home.php:182
 msgid "Social Text"
 msgstr "متن شبکه های اجتماعی"
 
-#: inc/classes/customizers/class-home.php:179
+#: inc/classes/customizers/class-home.php:184
 msgid "Follow Me:"
 msgstr "من را دنبال کنید:"
 
-#: inc/classes/customizers/class-home.php:187
+#: inc/classes/customizers/class-home.php:192
 msgid "Social Buttons"
 msgstr "دکمه های شبکه های اجتماعی"
 
-#: inc/classes/customizers/class-home.php:189
-#: inc/classes/customizers/class-resume.php:90
-#: inc/classes/customizers/class-resume.php:129
-#: inc/classes/customizers/class-services.php:90
-#: inc/classes/customizers/class-skills.php:90
-#: inc/classes/customizers/class-skills.php:115
+#: inc/classes/customizers/class-home.php:194
+#: inc/classes/customizers/class-resume.php:95
+#: inc/classes/customizers/class-resume.php:134
+#: inc/classes/customizers/class-services.php:95
+#: inc/classes/customizers/class-skills.php:94
+#: inc/classes/customizers/class-skills.php:119
 msgid "Use 'Fontawesome' classes as the icon text"
-msgstr ""
-"از کلاس های  کتابخانه \"Fontawesome\" برای نمایش آیکون ها استفاده کنید."
+msgstr "از کلاس های  کتابخانه \"Fontawesome\" برای نمایش آیکون ها استفاده کنید"
 
-#: inc/classes/customizers/class-home.php:192
+#: inc/classes/customizers/class-home.php:197
 msgid "Social Button"
 msgstr "دکمه شبکه اجتماعی"
 
-#: inc/classes/customizers/class-home.php:194
+#: inc/classes/customizers/class-home.php:199
 msgid "Add New Button"
 msgstr "افزودن دکمه جدید"
 
-#: inc/classes/customizers/class-home.php:205
+#: inc/classes/customizers/class-home.php:210
 msgid "Link"
 msgstr "لینک"
 
-#: inc/classes/customizers/class-logo-list.php:42
+#: inc/classes/customizers/class-logo-list.php:47
 msgid "Show Border Bottom"
 msgstr "نمایش خط زیرین"
 
-#: inc/classes/customizers/class-logo-list.php:50
+#: inc/classes/customizers/class-logo-list.php:55
 msgid "Logos"
 msgstr "لوگو ها"
 
-#: inc/classes/customizers/class-logo-list.php:56
+#: inc/classes/customizers/class-logo-list.php:61
 msgid "Add New Logo"
 msgstr "افزودن لوگو جدید"
 
-#: inc/classes/customizers/class-logo-list.php:62
+#: inc/classes/customizers/class-logo-list.php:67
 msgid "Show Border"
 msgstr "نمایش خط کناری"
 
-#: inc/classes/customizers/class-logo-list.php:67
+#: inc/classes/customizers/class-logo-list.php:72
 msgid "Logo Light Top"
 msgstr "لوگو روشن (بالا)"
 
-#: inc/classes/customizers/class-logo-list.php:73
+#: inc/classes/customizers/class-logo-list.php:78
 msgid "Logo Dark Top"
 msgstr "لوگو تیره (بالا)"
 
-#: inc/classes/customizers/class-logo-list.php:80
+#: inc/classes/customizers/class-logo-list.php:85
 msgid "Logo Light Bottom"
 msgstr "لوگو روشن (پایین)"
 
-#: inc/classes/customizers/class-logo-list.php:87
+#: inc/classes/customizers/class-logo-list.php:92
 msgid "Logo Dark Bottom"
 msgstr "لوگو تیره (پایین)"
 
-#: inc/classes/customizers/class-portfolio.php:45
+#: inc/classes/customizers/class-portfolio.php:49
 msgid "My Portfolio & My Education"
-msgstr "نمونه کار ها و پروژه های انجام شده ی من."
+msgstr "نمونه کار ها و پروژه های انجام شده ی من"
 
-#: inc/classes/customizers/class-portfolio.php:56
+#: inc/classes/customizers/class-portfolio.php:60
 msgid "My Portfolio"
 msgstr "نمونه کار من"
 
-#: inc/classes/customizers/class-resume.php:41
+#: inc/classes/customizers/class-portfolio.php:76
+#, fuzzy
+#| msgid "Counter Number"
+msgid "Show Number"
+msgstr "شمارنده"
+
+#: inc/classes/customizers/class-resume.php:46
 msgid "Resume Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-resume.php:53
+#: inc/classes/customizers/class-resume.php:58
 msgid "My Experience & Education"
-msgstr "رزومه کاری و تحصیلی "
+msgstr "رزومه کاری و تحصیلی"
 
-#: inc/classes/customizers/class-resume.php:64
+#: inc/classes/customizers/class-resume.php:69
 msgid "My Resume"
 msgstr "رزومه من"
 
-#: inc/classes/customizers/class-resume.php:80
+#: inc/classes/customizers/class-resume.php:85
 msgid "Resume Items"
 msgstr "آیتم ها"
 
-#: inc/classes/customizers/class-resume.php:88
+#: inc/classes/customizers/class-resume.php:93
 msgid "Resume First Culomn Items"
 msgstr "آیتم های اولین ستون رزومه"
 
-#: inc/classes/customizers/class-resume.php:93
-#: inc/classes/customizers/class-resume.php:132
+#: inc/classes/customizers/class-resume.php:98
+#: inc/classes/customizers/class-resume.php:137
 msgid "Resume Item"
 msgstr "آیتم"
 
-#: inc/classes/customizers/class-resume.php:95
-#: inc/classes/customizers/class-resume.php:134
+#: inc/classes/customizers/class-resume.php:100
+#: inc/classes/customizers/class-resume.php:139
 msgid "Add New Resume Item"
 msgstr "افزودن آیتم جدید"
 
-#: inc/classes/customizers/class-resume.php:120
-#: inc/classes/customizers/class-resume.php:159
+#: inc/classes/customizers/class-resume.php:125
+#: inc/classes/customizers/class-resume.php:164
 msgid "Years"
 msgstr "سال ها"
 
-#: inc/classes/customizers/class-resume.php:127
+#: inc/classes/customizers/class-resume.php:132
 msgid "Resume Second Culomn Items"
 msgstr "آیتم های دومین ستون رزومه"
 
-#: inc/classes/customizers/class-services.php:41
+#: inc/classes/customizers/class-services.php:46
 msgid "Services Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-services.php:63
+#: inc/classes/customizers/class-services.php:68
 msgid "My Services"
 msgstr "خدمات من"
 
-#: inc/classes/customizers/class-services.php:80
+#: inc/classes/customizers/class-services.php:85
 msgid "Services Contents"
 msgstr "محتوا"
 
-#: inc/classes/customizers/class-services.php:88
 #: inc/classes/customizers/class-services.php:93
+#: inc/classes/customizers/class-services.php:98
 msgid "Service"
 msgstr "خدمت"
 
-#: inc/classes/customizers/class-services.php:95
+#: inc/classes/customizers/class-services.php:100
 msgid "Add New Service"
 msgstr "افزودن خدمت جدید"
 
-#: inc/classes/customizers/class-services.php:102
+#: inc/classes/customizers/class-services.php:107
 msgid "Primary Color"
 msgstr "رنگ اصلی"
 
-#: inc/classes/customizers/class-services.php:105
+#: inc/classes/customizers/class-services.php:110
 msgid "Green"
 msgstr "سبز"
 
-#: inc/classes/customizers/class-services.php:106
+#: inc/classes/customizers/class-services.php:111
 msgid "Orang"
 msgstr "نارنجی"
 
-#: inc/classes/customizers/class-services.php:107
+#: inc/classes/customizers/class-services.php:112
 msgid "Blue"
 msgstr "آبی"
 
-#: inc/classes/customizers/class-services.php:108
+#: inc/classes/customizers/class-services.php:113
 msgid "Yellow"
 msgstr "زرد"
 
-#: inc/classes/customizers/class-services.php:109
+#: inc/classes/customizers/class-services.php:114
 msgid "Pink"
 msgstr "صورتی"
 
-#: inc/classes/customizers/class-services.php:110
+#: inc/classes/customizers/class-services.php:115
 msgid "Purple"
 msgstr "بنفش"
 
-#: inc/classes/customizers/class-services.php:132
+#: inc/classes/customizers/class-services.php:137
 msgid "more"
 msgstr "بیشتر"
 
-#: inc/classes/customizers/class-skills.php:41
+#: inc/classes/customizers/class-skills.php:45
 msgid "Skills Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-skills.php:53
+#: inc/classes/customizers/class-skills.php:57
 msgid "My Skills And My Abilities"
 msgstr "مهارت ها و زبان های مورد استفاده من"
 
-#: inc/classes/customizers/class-skills.php:64
+#: inc/classes/customizers/class-skills.php:68
 msgid "My Skills"
 msgstr "مهارت های من"
 
-#: inc/classes/customizers/class-skills.php:80
+#: inc/classes/customizers/class-skills.php:84
 msgid "Skills Items"
 msgstr "آیتم ها"
 
-#: inc/classes/customizers/class-skills.php:88
-#: inc/classes/customizers/class-skills.php:113
+#: inc/classes/customizers/class-skills.php:92
+#: inc/classes/customizers/class-skills.php:117
 msgid "Skills First Culomn Items"
 msgstr "آیتم های اولین ستون مهارت ها"
 
-#: inc/classes/customizers/class-skills.php:93
-#: inc/classes/customizers/class-skills.php:118
+#: inc/classes/customizers/class-skills.php:97
+#: inc/classes/customizers/class-skills.php:122
 msgid "Skills Item"
 msgstr "آیتم"
 
-#: inc/classes/customizers/class-skills.php:95
-#: inc/classes/customizers/class-skills.php:120
+#: inc/classes/customizers/class-skills.php:99
+#: inc/classes/customizers/class-skills.php:124
 msgid "Add New Skill Item"
 msgstr "افزودن آیتم جدید"
 
-#: inc/classes/customizers/class-skills.php:105
-#: inc/classes/customizers/class-skills.php:130
+#: inc/classes/customizers/class-skills.php:109
+#: inc/classes/customizers/class-skills.php:134
 msgid "Percent"
 msgstr "درصد"
 
-#: inc/classes/customizers/class-testimonial.php:34
-#: inc/classes/customizers/class-testimonial.php:64
+#: inc/classes/customizers/class-testimonial.php:39
+#: inc/classes/customizers/class-testimonial.php:69
 msgid "Testimonial"
 msgstr "نظرات"
 
-#: inc/classes/customizers/class-testimonial.php:41
+#: inc/classes/customizers/class-testimonial.php:46
 msgid "Testimonial Title"
 msgstr "عنوان"
 
-#: inc/classes/customizers/class-testimonial.php:53
+#: inc/classes/customizers/class-testimonial.php:58
 msgid "What My Friends & Colleagues Say About Me"
 msgstr "آنچه همکاران و دوستانم درباره من می گویند"
 
-#: inc/classes/customizers/class-testimonial.php:84
+#: inc/classes/customizers/class-testimonial.php:89
 msgid "Testimonial Item"
 msgstr "نظر"
 
-#: inc/classes/customizers/class-testimonial.php:86
+#: inc/classes/customizers/class-testimonial.php:91
 msgid "Add New Testimonial"
 msgstr "افزودن نظر جدید"
 
-#: inc/classes/customizers/class-testimonial.php:92
-msgid "Name"
-msgstr "نام"
-
-#: inc/classes/customizers/class-testimonial.php:96
+#: inc/classes/customizers/class-testimonial.php:101
 msgid "Job Position"
 msgstr "عنوان شغلی"
 
-#: inc/classes/customizers/class-testimonial.php:101
+#: inc/classes/customizers/class-testimonial.php:106
 msgid "Testimonial Text"
 msgstr "متن نظر"
 
-#: template-parts/portfolio.php:4
+#: inc/classes/tgm/class-tgm-plugin-activation.php:346
+msgid "Install Required Plugins"
+msgstr "نصب افزونه های ضروری"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:347
+msgid "Install Plugins"
+msgstr "نصب افزونه ها"
+
+#. translators: %s: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "در حال نصب افزونه: %s"
+
+#. translators: %s: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:351
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "بروزرسانی افزونه: %s"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:352
+msgid "Something went wrong with the plugin API."
+msgstr "مشکلی در API افزونه به وجود آمد."
+
+#. translators: 1: plugin name(s).
+#: inc/classes/tgm/class-tgm-plugin-activation.php:355
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "افزونه های روبرو برای قالب ضروری هستند: %s."
+msgstr[1] "افزونه ی روبرو برای قالب ضروری است: %s."
+
+#. translators: 1: plugin name(s).
+#: inc/classes/tgm/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "افزونه های روبرو برای بهترین کارایی قالب توصیه می شوند: %s."
+msgstr[1] "افزونه ی روبرو برای بهترین کارایی قالب توصیه می شود: %s."
+
+#. translators: 1: plugin name(s).
+#: inc/classes/tgm/class-tgm-plugin-activation.php:367
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"افزونه های روبرو برای بهترین کارایی قالب نیاز به بروزرسانی به آخرین نسخه "
+"دارند: %s."
+msgstr[1] ""
+"افزونه ی روبرو برای بهترین کارایی قالب نیاز به بروزرسانی به آخرین نسخه دارد: "
+"%s."
+
+#. translators: 1: plugin name(s).
+#: inc/classes/tgm/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "بروزرسانی هایی برای افزونه های روبرو وجود دارند: %s."
+msgstr[1] "بروزرسانی  برای افزونه روبرو وجود دارند: %s."
+
+#. translators: 1: plugin name(s).
+#: inc/classes/tgm/class-tgm-plugin-activation.php:379
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "افزونه های ضروری روبر غیرفعال هستند: %s."
+msgstr[1] "افزونه  ضروری روبر غیرفعال است: %s."
+
+#. translators: 1: plugin name(s).
+#: inc/classes/tgm/class-tgm-plugin-activation.php:385
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "افزونه های توصیه شده روبر غیرفعال هستند: %s."
+msgstr[1] "افزونه توصیه شده روبر غیرفعال است: %s."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:390
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "شروع نصب افزونه ها"
+msgstr[1] "شروع نصب افزونه"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:395
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "شروع بروزرسانی افزونه ها"
+msgstr[1] "شروع بروزرسانی افزونه"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:400
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "شروع فعالسازی افزونه ها"
+msgstr[1] "شروع فعالسازی افزونه"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:404
+msgid "Return to Required Plugins Installer"
+msgstr "بازگشت به نصب کننده ی افزونه ها"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:405
+#: inc/classes/tgm/class-tgm-plugin-activation.php:945
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2707
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3781
+msgid "Return to the Dashboard"
+msgstr "بازگشت به پیشخوان"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:406
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3350
+msgid "Plugin activated successfully."
+msgstr "افزونه با موفقیت فعال شد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:407
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3135
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "افزونه های روبرو با موفقیت فعال شدند:"
+msgstr[1] "افزونه ی روبرو با موفقیت فعال شد:"
+
+#. translators: 1: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:409
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "افزونه %1$s از قبل فعال است."
+
+#. translators: 1: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:411
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"افزونه فعال نیست. نسخه ی بالاتری از %s برای قالب مورد نیاز است. لطفا افزونه "
+"را بروزرسانی کنید."
+
+#. translators: 1: dashboard link.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:413
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "تمام افزونه ها با موفقیت نصب و فعال شده اند. %1$s"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:414
+msgid "Dismiss this notice"
+msgstr "رد کردن این اعلامیه"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:415
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr "تعدادی افزونه توصیه شده برای نصب ,بروزرسانی یا فعالسازی موجود هستند."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:416
+msgid "Please contact the administrator of this site for help."
+msgstr "لطفا به مدیریت سایت برای کمک تماس بگیرید."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:626
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "برای سازگاری این افزونه با قالب افزونه را بروزرسانی کنید."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:627
+msgid "Update Required"
+msgstr "بروزرسانی ضروری"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:748
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:1054
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:1054
+#: inc/classes/tgm/class-tgm-plugin-activation.php:1057
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:1057
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:1243
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3131
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "و"
+
+#. translators: %s: version number
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2139
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2440
+msgid "Required"
+msgstr "ضروری"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2443
+msgid "Recommended"
+msgstr "توصیه شده"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2460
+msgid "WordPress Repository"
+msgstr "مخزن وردپرس"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2463
+msgid "External Source"
+msgstr "منبع خارجی"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2466
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2484
+msgid "Not Installed"
+msgstr "نصب نشده"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2488
+msgid "Installed But Not Activated"
+msgstr "نصب شده فعال نشده"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2490
+msgid "Active"
+msgstr "فعال"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2496
+msgid "Required Update not Available"
+msgstr "بروزرسانی ضروری در دسترس نیست"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2498
+msgid "Requires Update"
+msgstr "نیازمند بروزرسانی"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2500
+msgid "Update recommended"
+msgstr "بروزرسانی توصیه شده"
+
+#. translators: 1: install status, 2: update status
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2509
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2557
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "تمام <span class=\"count\">(%s)</span>"
+msgstr[1] "تمام <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2561
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "برای نصب <span class=\"count\">(%s)</span>"
+msgstr[1] "برای نصب <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2565
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "بروزرسانی موجود <span class=\"count\">(%s)</span>"
+msgstr[1] "بروزرسانی موجود <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2569
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "برای فعالسازی <span class=\"count\">(%s)</span>"
+msgstr[1] "برای فعالسازی <span class=\"count\">(%s)</span>"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2655
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "ناشناخته"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2663
+msgid "Installed version:"
+msgstr "نسخه نصب شده:"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2671
+msgid "Minimum required version:"
+msgstr "حداقل نسخه مورد نیاز:"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2683
+msgid "Available version:"
+msgstr "نسخه در دسترس:"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2707
+msgid "No plugins to install, update or activate."
+msgstr "افزونه ای برای نصب, بروزرسانی یا فعالسازی وجود ندارد"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2722
+msgid "Plugin"
+msgstr "افزونه"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2723
+msgid "Source"
+msgstr "منبع"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2724
+msgid "Type"
+msgstr "نوع"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2728
+msgid "Version"
+msgstr "نسخه"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2729
+msgid "Status"
+msgstr "وضعیت"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2781
+#, php-format
+msgid "Install %2$s"
+msgstr "نصب %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2786
+#, php-format
+msgid "Update %2$s"
+msgstr "بروزرسانی %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2792
+#, php-format
+msgid "Activate %2$s"
+msgstr "فعالسازی %2$s"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2864
+msgid "Upgrade message from the plugin author:"
+msgstr "پیغام بروزرسانی از نویسنده ی افزونه:"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2899
+msgid "Install"
+msgstr "نصب"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2905
+msgid "Update"
+msgstr "بروزرسانی"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2908
+msgid "Activate"
+msgstr "فعالسازی"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2940
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "افزونه ای برای نصب انتخاب نشده است."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2942
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "افزونه ای برای بروزرسانی انتخاب نشده است."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2983
+msgid "No plugins are available to be installed at this time."
+msgstr "درحال حاضر افزونه ای برای نصب وجود ندارد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:2985
+msgid "No plugins are available to be updated at this time."
+msgstr "درحال حاضر افزونه ای برای بروزرسانی وجود ندارد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3091
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "افزونه ای برای فعالسازی انتخاب نشده است."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3117
+msgid "No plugins are available to be activated at this time."
+msgstr "در حال حاضر افزونه ای برای فعالسازی وجود ندارد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3349
+msgid "Plugin activation failed."
+msgstr "فعالسازی افزونه با خطا مواجه شد."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3696
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "در حال بروزرسانی افزونه %1$s (%2$d/%3$d)"
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3699
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "خطایی در مراحل نصب  %1$s: <strong>%2$s</strong> رخ داد."
+
+#. translators: 1: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3701
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "نصب %1$s با خطا مواجه شد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3705
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"مراحل نصب و فعالسازی در حال شروع است. این مراحل مدتی به طول می انجامد, لطفا "
+"صبور باشید."
+
+#. translators: 1: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3707
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s با موفقیت نصب و فعال شد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3707
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3715
+msgid "Show Details"
+msgstr "نمایش جزئیات"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3707
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3715
+msgid "Hide Details"
+msgstr "مخفی سازی جزئیات"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3708
+msgid "All installations and activations have been completed."
+msgstr "تمامی نصب و فعالسازی ها انجام شده است."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3710
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "درحال نصب و فعالسازی افزونه  %1$s (%2$d/%3$d)"
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3713
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"مراحل نصب  در حال شروع است. این مراحل مدتی به طول می انجامد, لطفا صبور باشید."
+
+#. translators: 1: plugin name.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3715
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s با موفقیت نصب شد."
+
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3716
+msgid "All installations have been completed."
+msgstr "تمام نصب ها با موفقیت انجام شده است."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/classes/tgm/class-tgm-plugin-activation.php:3718
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "در حال نصب افزونه %1$s (%2$d/%3$d)"
+
+#: template-parts/portfolio.php:5
 msgid "No categories"
 msgstr "بدون دسته بندی"
 
@@ -710,3 +1180,29 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://www.rtl-theme.com/author/maxjn/"
 msgstr ""
+
+#~ msgctxt "post date"
+#~ msgid "Posted on %s"
+#~ msgstr "نوشته شده در %s"
+
+#~ msgctxt "post author"
+#~ msgid " by %s"
+#~ msgstr " توسط %s"
+
+#~ msgid "Read more"
+#~ msgstr "بیشتر"
+
+#~ msgid "First"
+#~ msgstr "اولین"
+
+#~ msgid "Prev"
+#~ msgstr "قبلی"
+
+#~ msgid "Last"
+#~ msgstr "آخرین"
+
+#~ msgid "Contact Location"
+#~ msgstr "لوکیشن"
+
+#~ msgid "Location"
+#~ msgstr "لوکیشن"

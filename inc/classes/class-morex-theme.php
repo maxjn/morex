@@ -10,6 +10,11 @@ namespace MOREX_THEME\Inc;
 
 use MOREX_THEME\Inc\Traits\Singleton;
 
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 class MOREX_THEME
 {
 	use Singleton;
@@ -19,19 +24,18 @@ class MOREX_THEME
 		/**
 		 * Load Textdomain
 		 */
-		load_theme_textdomain('morex', get_template_directory() . '/languages');
-
-
-
+		load_theme_textdomain('morex', MOREX_DIR_PATH . '/languages');
 
 
 		// Load class.
+		Install_Plugins::get_instance();
 		Assets::get_instance();
 		Menus::get_instance();
+
 		Comment_Form::get_instance();
-
-		Customizers\Morex_Customizers::get_instance();
-
+		if (class_exists('Kirki')) {
+			Customizers\Morex_Customizers::get_instance();
+		}
 		$this->setup_hooks();
 	}
 
@@ -75,7 +79,9 @@ class MOREX_THEME
 		/**
 		 * Register image sizes.
 		 */
-		add_image_size('featured-thumbnail', 370, 254, true);
+		add_image_size('post-card', 370, 254, true);
+		add_image_size('portfolio-card', 370, 311, true);
+		add_image_size('portfolio-single', 694, 347.96, true);
 
 
 		// Add theme support for selective refresh for widgets.

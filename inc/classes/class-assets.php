@@ -10,6 +10,11 @@ namespace MOREX_THEME\Inc;
 
 use MOREX_THEME\Inc\Traits\Singleton;
 
+// Prevent Direct Access
+if (!defined('ABSPATH')) {
+	exit;
+}
+
 class Assets
 {
 	use Singleton;
@@ -65,6 +70,7 @@ class Assets
 
 
 		// Enqueue Scripts.
+		wp_enqueue_script('fontawesome');
 		wp_enqueue_script('swiper');
 		wp_enqueue_script('imagesloaded');
 		wp_enqueue_script('isotope');
