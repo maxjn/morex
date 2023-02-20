@@ -1,9 +1,9 @@
 @font-face {
   font-family: "primary-font";
-  src: url("../../fonts/yakan/yekan-400.eot");
-  src: url("../../fonts/yakan/yekan-400.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/yakan/yekan-400.woff2") format("woff2"),
-    url("../../fonts/yakan/yekan-400.woff") format("woff"),
-    url("../../fonts/yakan/yekan-400.ttf") format("truetype");
+  src: url("../../fonts/yekan/yekan-400.eot");
+  src: url("../../fonts/yekan/yekan-400.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/yekan/yekan-400.woff2") format("woff2"),
+    url("../../fonts/yekan/yekan-400.woff") format("woff"),
+    url("../../fonts/yekan/yekan-400.ttf") format("truetype");
   font-weight: 400;
 }
