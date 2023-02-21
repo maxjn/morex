@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morex\n"
 "POT-Creation-Date: 2023-02-19 20:24+0330\n"
-"PO-Revision-Date: 2023-02-21 10:23+0330\n"
+"PO-Revision-Date: 2023-02-21 15:32+0330\n"
 "Last-Translator: \n"
 "Language-Team: maxjn\n"
 "Language: fa_IR\n"
@@ -202,7 +202,7 @@ msgstr "27+"
 #: inc/classes/customizers/class-about.php:164
 #: inc/classes/customizers/class-home.php:144
 msgid "Bottom Text"
-msgstr "متن دکمه"
+msgstr "متن زیرین"
 
 #: inc/classes/customizers/class-about.php:166
 msgid "Years Of Experience"
@@ -541,10 +541,8 @@ msgid "My Portfolio"
 msgstr "نمونه کار من"
 
 #: inc/classes/customizers/class-portfolio.php:76
-#, fuzzy
-#| msgid "Counter Number"
 msgid "Show Number"
-msgstr "شمارنده"
+msgstr "تعداد قابل نمایش"
 
 #: inc/classes/customizers/class-resume.php:46
 msgid "Resume Title"
