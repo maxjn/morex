@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: morex\n"
 "POT-Creation-Date: 2023-02-19 20:24+0330\n"
-"PO-Revision-Date: 2023-02-19 20:28+0330\n"
+"PO-Revision-Date: 2023-02-21 10:23+0330\n"
 "Last-Translator: \n"
 "Language-Team: maxjn\n"
 "Language: fa_IR\n"
@@ -239,7 +239,7 @@ msgstr "نوشته ها"
 
 #: inc/classes/customizers/class-blog.php:95
 msgid "Show Blog Pagination"
-msgstr "نمایش انیمیشن بارگزاری"
+msgstr "نمایش پجینیشن"
 
 #: inc/classes/customizers/class-contact.php:39
 #: inc/classes/customizers/class-header.php:197
