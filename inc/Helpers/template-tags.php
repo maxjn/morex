@@ -115,15 +115,17 @@ function morex_the_excerpt($trim_character_count = 0)
 }
 
 function morex_the_post_pagination($query)
-{
+{ // 'paged' & 'page use' https://wordpress.stackexchange.com/questions/180784/what-is-the-difference-between-paged-and-page
+	$page_arg = (is_front_page() && is_page_template('templates/home.php')) ? 'page' : 'paged';
 	$big = 999999999; // need an unlikely integer
 	$links = paginate_links(array(
 		'base'      => str_replace($big, '%#%', get_pagenum_link($big)),
 		'format'    => '?paged=%#%',
-		'current'   => max(1, get_query_var('paged', $query)),
+		'current'   => max(1, get_query_var($page_arg, $query)),
 		'prev_text' => __('Previous', 'morex'),
 		'next_text' => __('Next', 'morex'),
 		'type'      => 'array',
+		'total' => $query->max_num_pages
 	));
 
 	if (get_theme_mod('show_pagination', true) === true) {
@@ -147,6 +149,10 @@ function morex_the_post_pagination($query)
         </nav>
     </div>
 </div>
+
+
 <!-- Pagination End -->
-<?php }
+<?php
+
+	}
 }
