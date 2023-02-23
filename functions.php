@@ -50,8 +50,8 @@ if (!defined('MOREX_SEARCH_RESULTS_POST_PER_PAGE')) {
     define('MOREX_SEARCH_RESULTS_POST_PER_PAGE', 9);
 }
 
-require_once MOREX_DIR_PATH . '/inc/helpers/autoloader.php';
-require_once MOREX_DIR_PATH . '/inc/helpers/template-tags.php';
+require_once MOREX_DIR_PATH . '/inc/Helpers/autoloader.php';
+require_once MOREX_DIR_PATH . '/inc/Helpers/template-tags.php';
 
 function morex_get_theme_instance()
 {
