@@ -36,6 +36,10 @@ class MOREX_THEME
 		if (class_exists('Kirki')) {
 			Customizers\Morex_Customizers::get_instance();
 		}
+
+		if (class_exists('Elementor')) {
+			Elementor_Locations::get_instance();
+		}
 		$this->setup_hooks();
 	}
 

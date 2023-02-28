@@ -3,7 +3,11 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-
+/**
+ * Testimonials Section Template
+ *
+ * @package Morex
+ */
 ?>
 <!-- Testimonial section start -->
 <section class="lg:py-[100px] md:py-[70px] dark:border-b dark:border-dark_accent1" id="testimonials">

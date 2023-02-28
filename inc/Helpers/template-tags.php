@@ -113,7 +113,11 @@ function morex_the_excerpt($trim_character_count = 0)
 
 	echo $excerpt;
 }
-
+/**
+ * Get the pagination
+ *
+ * @param object $wp_query
+ */
 function morex_the_post_pagination($query)
 { // 'paged' & 'page use' https://wordpress.stackexchange.com/questions/180784/what-is-the-difference-between-paged-and-page
 	$page_arg = (is_front_page() && is_page_template('templates/home.php')) ? 'page' : 'paged';
@@ -131,12 +135,12 @@ function morex_the_post_pagination($query)
 	if (get_theme_mod('show_pagination', true) === true) {
 
 ?>
-<!-- Pagination Start -->
-<div class="grid grid-cols-1 mt-7">
-    <div class="flex justify-center pagination">
-        <nav aria-label="Page navigation">
-            <ul class="flex list-style-none ">
-                <?php
+		<!-- Pagination Start -->
+		<div class="grid grid-cols-1 mt-7">
+			<div class="flex justify-center pagination">
+				<nav aria-label="Page navigation">
+					<ul class="flex list-style-none ">
+						<?php
 						if (isset($links) && is_array($links)) {
 							foreach ($links as $link) {
 								echo '<li class="page-item">';
@@ -145,13 +149,13 @@ function morex_the_post_pagination($query)
 							}
 						}
 						?>
-            </ul>
-        </nav>
-    </div>
-</div>
+					</ul>
+				</nav>
+			</div>
+		</div>
 
 
-<!-- Pagination End -->
+		<!-- Pagination End -->
 <?php
 
 	}

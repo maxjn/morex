@@ -3,7 +3,11 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-
+/**
+ * Home Section Template
+ *
+ * @package Morex
+ */
 ?>
 <!-- Hero section start -->
 <section class="bg-cover bg-no-repeat bg-center sm:h-full only-md:h-screen lg:min-h-screen flex justify-center items-center overflow-hidden bg-[url('../images/hero-bg-img.png')] bg-[#DAEEF1] dark:bg-[url('../images/hero-bg-img-dark.png')] dark:bg-dark_primary_bg dark:border-b dark:border-dark_accent1" id="home">

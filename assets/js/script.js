@@ -42,14 +42,14 @@ const preLoader = function () {
     )
       ? true
       : false;
-    if (!isMobile) {
+    if (!isMobile && preloaderWrapper != null) {
       setTimeout(function () {
         preloaderWrapper.classList.add("preloaded");
       }, 300);
       setTimeout(function () {
         preloaderWrapper.remove();
       }, 1000);
-    } else {
+    } else if (preloaderWrapper != null) {
       preloaderWrapper.remove();
     }
   };

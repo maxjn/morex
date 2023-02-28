@@ -3,7 +3,11 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-
+/**
+ * Skills Section Template
+ *
+ * @package Morex
+ */
 ?>
 <!--  Skill section start -->
 <section class="lg:py-[100px] md:pb-[70px]" id="skills">

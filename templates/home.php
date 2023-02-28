@@ -30,7 +30,7 @@ foreach ($sections as $section) {
 
     $section_index++;
 
-    get_template_part(MOREX_TEMPLATE_PATH . '/' . $section);
+    get_template_part(MOREX_TEMPLATE_SECTION_PATH . '/' . $section);
 }
 
 

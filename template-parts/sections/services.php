@@ -3,7 +3,11 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-
+/**
+ * Services Section Template
+ *
+ * @package Morex
+ */
 ?>
 <!-- Services section start -->
 <section class="lg:py-[100px] md:py-[70px]" id="services">
