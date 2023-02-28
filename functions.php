@@ -38,8 +38,16 @@ if (!defined('MOREX_CSS_DIR_PATH')) {
     define('MOREX_CSS_DIR_PATH', untrailingslashit(get_template_directory()) . '/assets/css');
 }
 
-if (!defined('MOREX_TEMPLATE_PATH')) {
-    define('MOREX_TEMPLATE_PATH', 'template-parts');
+if (!defined('MOREX_TEMPLATE_SECTION_PATH')) {
+    define('MOREX_TEMPLATE_SECTION_PATH', 'template-parts/sections');
+}
+
+if (!defined('MOREX_TEMPLATE_MAIN_PATH')) {
+    define('MOREX_TEMPLATE_MAIN_PATH', 'template-parts/main');
+}
+
+if (!defined('MOREX_TEMPLATE_CONTENT_PATH')) {
+    define('MOREX_TEMPLATE_CONTENT_PATH', 'template-parts/contents');
 }
 
 if (!defined('MOREX_ARCHIVE_POST_PER_PAGE')) {

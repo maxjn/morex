@@ -415,7 +415,7 @@ video {
 }
 
 :root {
-  --accent1-rgb: 238, 95, 56;
+  --accent1-rgb: 238 95 56;
 }
 
 body {
@@ -1409,7 +1409,7 @@ button {
 
 .border-accent1 {
   --tw-border-opacity: 1;
-  border-color: rgb(238 95 56 / var(--tw-border-opacity));
+  border-color: rgb(var(--accent1-rgb) / var(--tw-border-opacity));
 }
 
 .border-gray-300 {
@@ -1429,7 +1429,7 @@ button {
 
 .bg-accent1 {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1921,7 +1921,7 @@ button {
 
 .text-accent1 {
   --tw-text-opacity: 1;
-  color: rgb(238 95 56 / var(--tw-text-opacity));
+  color: rgb(var(--accent1-rgb) / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -2351,19 +2351,19 @@ section {
 .outline-btn {
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(238 95 56 / var(--tw-border-opacity));
+  border-color: rgb(var(--accent1-rgb) / var(--tw-border-opacity));
 }
 
 .outline-btn:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .solid-btn {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2491,12 +2491,12 @@ section {
 
 button.is-checked {
   --tw-text-opacity: 1;
-  color: rgb(238 95 56 / var(--tw-text-opacity));
+  color: rgb(var(--accent1-rgb) / var(--tw-text-opacity));
 }
 
 .dark button.is-checked {
   --tw-text-opacity: 1;
-  color: rgb(238 95 56 / var(--tw-text-opacity));
+  color: rgb(var(--accent1-rgb) / var(--tw-text-opacity));
 }
 
 .hero__layer--img.four {
@@ -2646,7 +2646,7 @@ button.is-checked {
 .swiper-pagination-bullet-active {
   width: 2.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 /* Blog */
@@ -2690,7 +2690,7 @@ button.is-checked {
 
 .menu__nav--item:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .menu__nav--item:hover svg,
@@ -2719,7 +2719,7 @@ button.is-checked {
 .menu--visible .toggle__navigation--button span::after,
 .menu--visible .toggle__navigation--button span::before {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .toggle__navigation--button span::after,
@@ -2774,7 +2774,7 @@ button.is-checked {
 .toggle__navigation ul li .toggle__nav--menu--label-wrapper:hover,
 .toggle__navigation ul li.active .toggle__nav--menu--label-wrapper {
   --tw-text-opacity: 1;
-  color: rgb(238 95 56 / var(--tw-text-opacity));
+  color: rgb(var(--accent1-rgb) / var(--tw-text-opacity));
 }
 
 .toggle__nav--menu--label-wrapper::before {
@@ -2783,7 +2783,7 @@ button.is-checked {
 
 .toggle__navigation ul li .toggle__nav--menu--label-wrapper::before {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .toggle__navigation.menu--visible
@@ -3077,7 +3077,7 @@ button.is-checked {
 .before\:bg-accent1::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .before\:bg-\[\#79DAB9\]::before {
@@ -3254,7 +3254,7 @@ button.is-checked {
 .after\:border-accent1::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
-  border-color: rgb(238 95 56 / var(--tw-border-opacity));
+  border-color: rgb(var(--accent1-rgb) / var(--tw-border-opacity));
 }
 
 .after\:bg-white::after {
@@ -3272,7 +3272,7 @@ button.is-checked {
 .after\:bg-accent1::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .after\:opacity-0::after {
@@ -3306,7 +3306,7 @@ button.is-checked {
 
 .hover\:bg-accent1:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary:hover {
@@ -3325,7 +3325,7 @@ button.is-checked {
 
 .hover\:text-accent1:hover {
   --tw-text-opacity: 1;
-  color: rgb(238 95 56 / var(--tw-text-opacity));
+  color: rgb(var(--accent1-rgb) / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -3732,7 +3732,7 @@ button.is-checked {
 
 .dark .dark\:bg-accent1 {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-gray-800 {
@@ -3817,7 +3817,7 @@ button.is-checked {
 
 .dark .dark\:hover\:text-accent1:hover {
   --tw-text-opacity: 1;
-  color: rgb(238 95 56 / var(--tw-text-opacity));
+  color: rgb(var(--accent1-rgb) / var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:text-white:hover {
@@ -4623,7 +4623,7 @@ button.is-checked {
 
 .pagination span.current {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 95 56 / var(--tw-bg-opacity));
+  background-color: rgb(var(--accent1-rgb) / var(--tw-bg-opacity));
   color: white;
   border-radius: 5px;
 }

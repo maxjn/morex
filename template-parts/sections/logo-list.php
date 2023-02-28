@@ -3,7 +3,11 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-
+/**
+ * Logo List Section Template
+ *
+ * @package Morex
+ */
 ?>
 <!-- Logo list section start -->
 <section class="py-[70px] lg:py-[100px] border-b-[1px] border-[#DDDDDD] dark:border-dark_accent1" id="logo-list">

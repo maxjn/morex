@@ -45,6 +45,11 @@ class Install_Plugins
                 'required'  => true,
             ],
             [
+                'name'      => 'Elementor',
+                'slug'      => 'elementor',
+                'required'  => false,
+            ],
+            [
                 'name'      => 'Contact Form 7',
                 'slug'      => 'contact-form-7',
                 'required'  => false,
