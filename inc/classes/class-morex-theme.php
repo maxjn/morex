@@ -8,6 +8,8 @@
 
 namespace MOREX_THEME\Inc;
 
+use MOREX_THEME\Inc\Custom_Css as IncCustom_Css;
+use MOREX_THEME\Inc\Customizers\Custom_Css;
 use MOREX_THEME\Inc\Traits\Singleton;
 
 // Prevent Direct Access
@@ -29,6 +31,7 @@ class MOREX_THEME
 
 		// Load class.
 		Install_Plugins::get_instance();
+		Custom_styles::get_instance();
 		Assets::get_instance();
 		Menus::get_instance();
 

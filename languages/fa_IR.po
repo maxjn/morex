@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: morex\n"
-"POT-Creation-Date: 2023-02-28 16:54+0330\n"
-"PO-Revision-Date: 2023-02-28 16:56+0330\n"
+"POT-Creation-Date: 2023-03-02 09:26+0330\n"
+"PO-Revision-Date: 2023-03-02 09:28+0330\n"
 "Last-Translator: \n"
 "Language-Team: maxjn\n"
 "Language: fa_IR\n"
@@ -27,11 +27,11 @@ msgstr "پیش"
 msgid "No comments yet. Leave the first comment."
 msgstr "هنوز دیدگاهی وجود ندارد. اولین دیدگاه را ارسال کنید."
 
-#: inc/Helpers/template-tags.php:125
+#: inc/Helpers/template-tags.php:129
 msgid "Previous"
 msgstr "قبلی"
 
-#: inc/Helpers/template-tags.php:126
+#: inc/Helpers/template-tags.php:130
 msgid "Next"
 msgstr "بعدی"
 
@@ -120,8 +120,8 @@ msgstr "عنوان فرعی"
 
 #: inc/classes/customizers/class-about.php:68
 #: inc/classes/customizers/class-display-sort.php:60
-#: inc/classes/customizers/class-header.php:134
-#: inc/classes/customizers/class-header.php:136
+#: inc/classes/customizers/class-header.php:142
+#: inc/classes/customizers/class-header.php:144
 #: inc/classes/customizers/class-home.php:164
 msgid "About Me"
 msgstr "درباره من"
@@ -199,8 +199,10 @@ msgstr "سال تجربه کاری"
 
 #: inc/classes/customizers/class-blog.php:39
 #: inc/classes/customizers/class-display-sort.php:66
-#: inc/classes/customizers/class-header.php:188
-#: inc/classes/customizers/class-header.php:190 index.php:7 index.php:27
+#: inc/classes/customizers/class-header.php:196
+#: inc/classes/customizers/class-header.php:198
+#: template-parts/contents/blog-content.php:12
+#: template-parts/contents/blog-content.php:32
 msgid "Blog"
 msgstr "وبلاگ"
 
@@ -231,8 +233,8 @@ msgid "Show Blog Pagination"
 msgstr "نمایش پجینیشن"
 
 #: inc/classes/customizers/class-contact.php:39
-#: inc/classes/customizers/class-header.php:197
-#: inc/classes/customizers/class-header.php:199
+#: inc/classes/customizers/class-header.php:205
+#: inc/classes/customizers/class-header.php:207
 msgid "Contact"
 msgstr "تماس"
 
@@ -283,22 +285,22 @@ msgid "Sections Sorting and Display"
 msgstr "ترتیب و نمایش بخش ها"
 
 #: inc/classes/customizers/class-display-sort.php:58
-#: inc/classes/customizers/class-header.php:116
-#: inc/classes/customizers/class-header.php:118
+#: inc/classes/customizers/class-header.php:124
+#: inc/classes/customizers/class-header.php:126
 #: inc/classes/customizers/class-home.php:40
 msgid "Home"
 msgstr "خانه"
 
 #: inc/classes/customizers/class-display-sort.php:59
-#: inc/classes/customizers/class-header.php:125
-#: inc/classes/customizers/class-header.php:127
+#: inc/classes/customizers/class-header.php:133
+#: inc/classes/customizers/class-header.php:135
 #: inc/classes/customizers/class-services.php:39
 msgid "Services"
 msgstr "خدمات"
 
 #: inc/classes/customizers/class-display-sort.php:61
-#: inc/classes/customizers/class-header.php:152
-#: inc/classes/customizers/class-header.php:154
+#: inc/classes/customizers/class-header.php:160
+#: inc/classes/customizers/class-header.php:162
 #: inc/classes/customizers/class-resume.php:39
 msgid "Resume"
 msgstr "رزومه"
@@ -309,22 +311,22 @@ msgid "Logo List"
 msgstr "لیست برند ها"
 
 #: inc/classes/customizers/class-display-sort.php:63
-#: inc/classes/customizers/class-header.php:170
-#: inc/classes/customizers/class-header.php:172
+#: inc/classes/customizers/class-header.php:178
+#: inc/classes/customizers/class-header.php:180
 #: inc/classes/customizers/class-portfolio.php:38
 msgid "Portfolio"
 msgstr "نمونه کار ها"
 
 #: inc/classes/customizers/class-display-sort.php:64
-#: inc/classes/customizers/class-header.php:161
-#: inc/classes/customizers/class-header.php:163
+#: inc/classes/customizers/class-header.php:169
+#: inc/classes/customizers/class-header.php:171
 #: inc/classes/customizers/class-skills.php:38
 msgid "Skills"
 msgstr "مهارت ها"
 
 #: inc/classes/customizers/class-display-sort.php:65
-#: inc/classes/customizers/class-header.php:179
-#: inc/classes/customizers/class-header.php:181
+#: inc/classes/customizers/class-header.php:187
+#: inc/classes/customizers/class-header.php:189
 #: inc/classes/customizers/class-testimonial.php:77
 #: inc/classes/customizers/class-testimonial.php:85
 msgid "Testimonials"
@@ -358,11 +360,15 @@ msgstr ""
 msgid "Theme General Settings"
 msgstr "تنظیمات عمومی قالب"
 
-#: inc/classes/customizers/class-generals.php:68
+#: inc/classes/customizers/class-generals.php:45
+msgid "Main Color"
+msgstr "رنگ اصلی"
+
+#: inc/classes/customizers/class-generals.php:84
 msgid "Main Font"
 msgstr "فونت اصلی"
 
-#: inc/classes/customizers/class-generals.php:77
+#: inc/classes/customizers/class-generals.php:93
 msgid "Show Loading Animation"
 msgstr "نمایش انیمیشن بارگذاری"
 
@@ -371,15 +377,12 @@ msgid "Header"
 msgstr "هدر"
 
 #: inc/classes/customizers/class-header.php:47
-#: inc/classes/customizers/class-header.php:143
-#: inc/classes/customizers/class-header.php:145
+#: inc/classes/customizers/class-header.php:151
+#: inc/classes/customizers/class-header.php:153
 #: inc/classes/customizers/class-logo-list.php:59
-#: template-parts/logo-list.php:42 template-parts/logo-list.php:44
-#: template-parts/logo-list.php:46 template-parts/logo-list.php:69
-#: template-parts/logo-list.php:71 template-parts/logo-list.php:73
 #: template-parts/main/header.php:36 template-parts/main/header.php:37
-#: template-parts/main/header.php:39 template-parts/main/header.php:135
-#: template-parts/main/header.php:136 template-parts/main/header.php:138
+#: template-parts/main/header.php:39 template-parts/main/header.php:154
+#: template-parts/main/header.php:155 template-parts/main/header.php:157
 #: template-parts/sections/logo-list.php:46
 #: template-parts/sections/logo-list.php:48
 #: template-parts/sections/logo-list.php:50
@@ -398,14 +401,18 @@ msgid "Dark Logo"
 msgstr "لوگو تیره"
 
 #: inc/classes/customizers/class-header.php:78
-msgid "Resume Button"
-msgstr "دکمه دانلود رزومه"
+msgid "Header Buttons"
+msgstr "دکمه های هدر"
 
 #: inc/classes/customizers/class-header.php:88
 msgid "Download Resume"
 msgstr "دانلود رزومه"
 
-#: inc/classes/customizers/class-header.php:107
+#: inc/classes/customizers/class-header.php:106
+msgid "Show Search Form"
+msgstr "نمایش فرم جستجو"
+
+#: inc/classes/customizers/class-header.php:115
 msgid "Menu Items"
 msgstr "فهرست"
 
@@ -1158,46 +1165,58 @@ msgstr "تمام نصب ها با موفقیت انجام شده است."
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "در حال نصب افزونه %1$s (%2$d/%3$d)"
 
-#: index.php:10
+#: template-parts/contents/blog-content.php:15
 #, php-format
 msgid "\"%s\" Category Archive"
 msgstr "آرشیو دسته بندی \"%s\""
 
-#: index.php:12
+#: template-parts/contents/blog-content.php:17
 #, php-format
 msgid "\"%s\" Tag Archive"
 msgstr "آرشیو برچسب \"%s\""
 
-#: index.php:14
+#: template-parts/contents/blog-content.php:19
 #, php-format
 msgid "\"%s\" Author Archive"
 msgstr "آرشیو نویسنده \"%s\""
 
-#: index.php:16
+#: template-parts/contents/blog-content.php:21
 #, php-format
 msgid "\"%s\" Day Archive"
 msgstr "آرشیو روز \"%s\""
 
-#: index.php:18
+#: template-parts/contents/blog-content.php:23
 #, php-format
 msgid "\"%s\" Month Archive"
 msgstr "آرشیو ماه \"%s\""
 
-#: index.php:20
+#: template-parts/contents/blog-content.php:25
 #, php-format
 msgid "\"%s\" Year Archive"
 msgstr "آرشیو سال \"%s\""
 
-#: index.php:22
+#: template-parts/contents/blog-content.php:27
 #, php-format
 msgid "Search Results For \"%s\""
 msgstr "نتیجه جستجو برای \"%s\""
 
-#: index.php:24
+#: template-parts/contents/blog-content.php:29
 msgid "Archive"
 msgstr "آرشیو"
 
-#: template-parts/portfolio.php:5 template-parts/sections/portfolio.php:5
+#: template-parts/contents/singular-content.php:26
+msgid "published in"
+msgstr "منتشر شده در "
+
+#: template-parts/contents/singular-content.php:26
+msgid "ago"
+msgstr "پیش"
+
+#: template-parts/contents/singular-content.php:33
+msgid "Tags: "
+msgstr "برچسب ها: "
+
+#: template-parts/sections/portfolio.php:5
 msgid "No categories"
 msgstr "بدون دسته بندی"
 
@@ -1213,6 +1232,9 @@ msgstr ""
 msgid "https://www.rtl-theme.com/author/maxjn/"
 msgstr ""
 
+#~ msgid " by "
+#~ msgstr " توسط "
+
 #~ msgid "Install Plugins"
 #~ msgstr "نصب افزونه ها"
 
@@ -1225,10 +1247,6 @@ msgstr ""
 #~ msgctxt "post date"
 #~ msgid "Posted on %s"
 #~ msgstr "نوشته شده در %s"
-
-#~ msgctxt "post author"
-#~ msgid " by %s"
-#~ msgstr " توسط %s"
 
 #~ msgid "Read more"
 #~ msgstr "بیشتر"

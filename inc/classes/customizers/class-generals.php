@@ -38,6 +38,22 @@ class Generals
             'priority'       => 20,
         ));
 
+
+        // Theme Color
+        new \Kirki\Field\Color(array(
+            'settings'    => 'theme_color',
+            'label'       => esc_html__('Main Color', 'morex'),
+            'section'     => 'general_section',
+            'default'     => '#EE5F38',
+            'choices'     => [
+                'alpha' => true,
+            ],
+            'choices'     => [
+                'alpha' => true,
+            ],
+        ));
+
+
         // RTL Fonts
         $fonts = array(
             'iran-yekan'     => 'ایران یکان',

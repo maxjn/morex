@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
     <div class="header__sticky py-5">
         <div class="container mx-auto">
             <div class="flex justify-between items-center">
-                <div class="logo">
+                <div class="logo flex justify-between items-center">
                     <?php
                     $light_logo = false;
                     $dark_logo = false;
@@ -43,8 +43,11 @@ if (!defined('ABSPATH')) {
                     }
                     ?>
                 </div>
+
                 <div class="flex items-center md:hidden">
+
                     <nav>
+
                         <ul class="flex items-center">
                             <?php
                             // Other sections
@@ -65,10 +68,10 @@ if (!defined('ABSPATH')) {
                             foreach ($sections as $section) {
 
                                 $section_index++;
-                                if (get_theme_mod($section . '_menu_text') && is_page_template('templates/home.php')) {
+                                if (get_theme_mod($section . '_menu_text')) {
                             ?>
                                     <li>
-                                        <a href="#<?= $section ?>" class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] <?= $section_index != 1 ? 'rtl:mr-[26px] rtl:xl:mr-[44px]' : ''; ?>  relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">
+                                        <a href="<?= home_url() ?>#<?= $section ?>" class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] <?= $section_index != 1 ? 'rtl:mr-[26px] rtl:xl:mr-[44px]' : ''; ?>  relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">
                                             <?= get_theme_mod($section . '_menu_text') ?? ''; ?>
                                         </a>
                                     </li>
@@ -93,6 +96,7 @@ if (!defined('ABSPATH')) {
 
                         </ul>
                     </nav>
+
                     <?php
                     if (get_theme_mod('resume_btn_text')) {
                     ?>
@@ -110,6 +114,18 @@ if (!defined('ABSPATH')) {
                                 </span>
                             </button>
                         </a>
+                    <?php }
+                    if (get_theme_mod('show_search', true)) {
+                    ?>
+                        <!-- Search Form Start -->
+                        <div class="box ltr:ml-[10px] rtl:mr-[10px]">
+                            <form name="search" role="search" method="get" action="<?php echo home_url('/'); ?>">
+                                <input type="hidden" name="post_type" value="post">
+                                <input class="input" type="search" name="s" onmouseout="this.value = ''; this.blur();">
+                            </form>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <!-- Search Form End -->
                     <?php } ?>
                 </div>
                 <div class="lg:hidden">
@@ -120,7 +136,10 @@ if (!defined('ABSPATH')) {
                             <line x1="3" y1="18" x2="21" y2="18"></line>
                         </svg>
                     </button>
+
+
                 </div>
+
             </div>
         </div>
         <!-- Start Offcanvas header menu -->
@@ -142,7 +161,7 @@ if (!defined('ABSPATH')) {
                     } ?>
                     <button class="offcanvas__close--btn dark:text-white" data-offcanvas>بستن</button>
                 </div>
-                <nav class="offcanvas__menu">
+                <nav class="offcanvas__menu flex flex-col">
                     <ul class="offcanvas__menu_ul">
                         <?php
                         // Other sections
@@ -202,17 +221,35 @@ if (!defined('ABSPATH')) {
                         }
                         ?>
                     </ul>
-                    <button class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
-                        <span class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                        </span>
-                        <span class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">دانلود
-                            رزومه</span>
-                    </button>
+                    <?php
+                    if (get_theme_mod('resume_btn_text')) {
+                    ?>
+                        <a href="<?= get_theme_mod('resume_btn_url', '#') ?>">
+                            <button class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
+                                <span class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                </span>
+                                <span class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0"><?= get_theme_mod('resume_btn_text') ?></span>
+                            </button>
+                        </a>
+                    <?php }
+                    if (get_theme_mod('show_search', true)) {
+                    ?>
+                        <!-- Search Form Start -->
+                        <div class="box inline-block text-center mt-[10px]">
+                            <form name="search" role="search" method="get" action="<?php echo home_url('/'); ?>">
+
+                                <input type="hidden" name="post_type" value="post">
+                                <input class="input" type="search" name="s" onmouseout="this.value = ''; this.blur();">
+                            </form>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <!-- Search Form End -->
+                    <?php } ?>
                 </nav>
 
             </div>
