@@ -412,10 +412,7 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-:root {
-  --accent1-rgb: 238 95 56;
+  width: 100%;
 }
 
 body {
@@ -1072,6 +1069,10 @@ button {
 
 .h-fit {
   height: fit-content;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-\[60px\] {
@@ -4631,4 +4632,40 @@ button.is-checked {
 .pagination a:hover:not(.current) {
   background-color: #ddd;
   border-radius: 5px;
+}
+
+.box {
+  position: relative;
+}
+
+.input {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 4px solid rgb(var(--accent1-rgb));
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: 17px;
+  color: rgb(var(--accent1-rgb));
+  outline: none;
+  transition: 0.5s;
+}
+.box:hover input {
+  width: 200px;
+  background: none;
+  border-radius: 10px;
+}
+.box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  color: rgb(var(--accent1-rgb));
+  transition: 0.2s;
+}
+.box:hover i {
+  opacity: 0;
+  z-index: -1;
 }

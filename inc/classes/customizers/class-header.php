@@ -75,7 +75,7 @@ class Header
         new \Kirki\Section(
             'resume_btn_section',
             [ //resume section
-                'title'       => esc_html__('Resume Button', 'morex'),
+                'title'       => esc_html__('Header Buttons', 'morex'),
                 'panel'       => 'header_panel',
                 'priority'    => 20,
             ]
@@ -99,6 +99,14 @@ class Header
                 'priority' => 10,
             ]
         );
+
+        // Show Loading
+        new \Kirki\Field\Checkbox(array(
+            'settings'    => 'show_search',
+            'label'       => esc_html__('Show Search Form', 'morex'),
+            'section'     => 'resume_btn_section',
+            'default'     => true,
+        ));
 
 
         new \Kirki\Section(

@@ -1,6 +1,8 @@
 # ToDo:
 
-- added elementor support
-- fixed preloaderwrapper error in js files
-- added singular.php file
-- added 404.php file
+- added search form:
+  - search post type
+  - style
+  - search title
+  -
+- fixed main color setting problem

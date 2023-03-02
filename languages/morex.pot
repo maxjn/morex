@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Morex\n"
-"POT-Creation-Date: 2023-02-28 16:54+0330\n"
+"POT-Creation-Date: 2023-03-02 09:26+0330\n"
 "PO-Revision-Date: 2023-02-17 17:23+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,11 +33,11 @@ msgstr ""
 msgid "No comments yet. Leave the first comment."
 msgstr ""
 
-#: inc/Helpers/template-tags.php:125
+#: inc/Helpers/template-tags.php:129
 msgid "Previous"
 msgstr ""
 
-#: inc/Helpers/template-tags.php:126
+#: inc/Helpers/template-tags.php:130
 msgid "Next"
 msgstr ""
 
@@ -126,8 +126,8 @@ msgstr ""
 
 #: inc/classes/customizers/class-about.php:68
 #: inc/classes/customizers/class-display-sort.php:60
-#: inc/classes/customizers/class-header.php:134
-#: inc/classes/customizers/class-header.php:136
+#: inc/classes/customizers/class-header.php:142
+#: inc/classes/customizers/class-header.php:144
 #: inc/classes/customizers/class-home.php:164
 msgid "About Me"
 msgstr ""
@@ -205,8 +205,10 @@ msgstr ""
 
 #: inc/classes/customizers/class-blog.php:39
 #: inc/classes/customizers/class-display-sort.php:66
-#: inc/classes/customizers/class-header.php:188
-#: inc/classes/customizers/class-header.php:190 index.php:7 index.php:27
+#: inc/classes/customizers/class-header.php:196
+#: inc/classes/customizers/class-header.php:198
+#: template-parts/contents/blog-content.php:12
+#: template-parts/contents/blog-content.php:32
 msgid "Blog"
 msgstr ""
 
@@ -237,8 +239,8 @@ msgid "Show Blog Pagination"
 msgstr ""
 
 #: inc/classes/customizers/class-contact.php:39
-#: inc/classes/customizers/class-header.php:197
-#: inc/classes/customizers/class-header.php:199
+#: inc/classes/customizers/class-header.php:205
+#: inc/classes/customizers/class-header.php:207
 msgid "Contact"
 msgstr ""
 
@@ -289,22 +291,22 @@ msgid "Sections Sorting and Display"
 msgstr ""
 
 #: inc/classes/customizers/class-display-sort.php:58
-#: inc/classes/customizers/class-header.php:116
-#: inc/classes/customizers/class-header.php:118
+#: inc/classes/customizers/class-header.php:124
+#: inc/classes/customizers/class-header.php:126
 #: inc/classes/customizers/class-home.php:40
 msgid "Home"
 msgstr ""
 
 #: inc/classes/customizers/class-display-sort.php:59
-#: inc/classes/customizers/class-header.php:125
-#: inc/classes/customizers/class-header.php:127
+#: inc/classes/customizers/class-header.php:133
+#: inc/classes/customizers/class-header.php:135
 #: inc/classes/customizers/class-services.php:39
 msgid "Services"
 msgstr ""
 
 #: inc/classes/customizers/class-display-sort.php:61
-#: inc/classes/customizers/class-header.php:152
-#: inc/classes/customizers/class-header.php:154
+#: inc/classes/customizers/class-header.php:160
+#: inc/classes/customizers/class-header.php:162
 #: inc/classes/customizers/class-resume.php:39
 msgid "Resume"
 msgstr ""
@@ -315,22 +317,22 @@ msgid "Logo List"
 msgstr ""
 
 #: inc/classes/customizers/class-display-sort.php:63
-#: inc/classes/customizers/class-header.php:170
-#: inc/classes/customizers/class-header.php:172
+#: inc/classes/customizers/class-header.php:178
+#: inc/classes/customizers/class-header.php:180
 #: inc/classes/customizers/class-portfolio.php:38
 msgid "Portfolio"
 msgstr ""
 
 #: inc/classes/customizers/class-display-sort.php:64
-#: inc/classes/customizers/class-header.php:161
-#: inc/classes/customizers/class-header.php:163
+#: inc/classes/customizers/class-header.php:169
+#: inc/classes/customizers/class-header.php:171
 #: inc/classes/customizers/class-skills.php:38
 msgid "Skills"
 msgstr ""
 
 #: inc/classes/customizers/class-display-sort.php:65
-#: inc/classes/customizers/class-header.php:179
-#: inc/classes/customizers/class-header.php:181
+#: inc/classes/customizers/class-header.php:187
+#: inc/classes/customizers/class-header.php:189
 #: inc/classes/customizers/class-testimonial.php:77
 #: inc/classes/customizers/class-testimonial.php:85
 msgid "Testimonials"
@@ -358,11 +360,15 @@ msgstr ""
 msgid "Theme General Settings"
 msgstr ""
 
-#: inc/classes/customizers/class-generals.php:68
+#: inc/classes/customizers/class-generals.php:45
+msgid "Main Color"
+msgstr ""
+
+#: inc/classes/customizers/class-generals.php:84
 msgid "Main Font"
 msgstr ""
 
-#: inc/classes/customizers/class-generals.php:77
+#: inc/classes/customizers/class-generals.php:93
 msgid "Show Loading Animation"
 msgstr ""
 
@@ -371,15 +377,12 @@ msgid "Header"
 msgstr ""
 
 #: inc/classes/customizers/class-header.php:47
-#: inc/classes/customizers/class-header.php:143
-#: inc/classes/customizers/class-header.php:145
+#: inc/classes/customizers/class-header.php:151
+#: inc/classes/customizers/class-header.php:153
 #: inc/classes/customizers/class-logo-list.php:59
-#: template-parts/logo-list.php:42 template-parts/logo-list.php:44
-#: template-parts/logo-list.php:46 template-parts/logo-list.php:69
-#: template-parts/logo-list.php:71 template-parts/logo-list.php:73
 #: template-parts/main/header.php:36 template-parts/main/header.php:37
-#: template-parts/main/header.php:39 template-parts/main/header.php:135
-#: template-parts/main/header.php:136 template-parts/main/header.php:138
+#: template-parts/main/header.php:39 template-parts/main/header.php:154
+#: template-parts/main/header.php:155 template-parts/main/header.php:157
 #: template-parts/sections/logo-list.php:46
 #: template-parts/sections/logo-list.php:48
 #: template-parts/sections/logo-list.php:50
@@ -398,14 +401,18 @@ msgid "Dark Logo"
 msgstr ""
 
 #: inc/classes/customizers/class-header.php:78
-msgid "Resume Button"
+msgid "Header Buttons"
 msgstr ""
 
 #: inc/classes/customizers/class-header.php:88
 msgid "Download Resume"
 msgstr ""
 
-#: inc/classes/customizers/class-header.php:107
+#: inc/classes/customizers/class-header.php:106
+msgid "Show Search Form"
+msgstr ""
+
+#: inc/classes/customizers/class-header.php:115
 msgid "Menu Items"
 msgstr ""
 
@@ -1150,46 +1157,58 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: index.php:10
+#: template-parts/contents/blog-content.php:15
 #, php-format
 msgid "\"%s\" Category Archive"
 msgstr ""
 
-#: index.php:12
+#: template-parts/contents/blog-content.php:17
 #, php-format
 msgid "\"%s\" Tag Archive"
 msgstr ""
 
-#: index.php:14
+#: template-parts/contents/blog-content.php:19
 #, php-format
 msgid "\"%s\" Author Archive"
 msgstr ""
 
-#: index.php:16
+#: template-parts/contents/blog-content.php:21
 #, php-format
 msgid "\"%s\" Day Archive"
 msgstr ""
 
-#: index.php:18
+#: template-parts/contents/blog-content.php:23
 #, php-format
 msgid "\"%s\" Month Archive"
 msgstr ""
 
-#: index.php:20
+#: template-parts/contents/blog-content.php:25
 #, php-format
 msgid "\"%s\" Year Archive"
 msgstr ""
 
-#: index.php:22
+#: template-parts/contents/blog-content.php:27
 #, php-format
 msgid "Search Results For \"%s\""
 msgstr ""
 
-#: index.php:24
+#: template-parts/contents/blog-content.php:29
 msgid "Archive"
 msgstr ""
 
-#: template-parts/portfolio.php:5 template-parts/sections/portfolio.php:5
+#: template-parts/contents/singular-content.php:26
+msgid "published in"
+msgstr ""
+
+#: template-parts/contents/singular-content.php:26
+msgid "ago"
+msgstr ""
+
+#: template-parts/contents/singular-content.php:33
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/sections/portfolio.php:5
 msgid "No categories"
 msgstr ""
 
