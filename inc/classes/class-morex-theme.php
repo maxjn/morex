@@ -37,7 +37,7 @@ class MOREX_THEME
 
 		Comment_Form::get_instance();
 		if (class_exists('Kirki')) {
-			Customizers\Morex_Customizers::get_instance();
+			Customizers\Morex_Init_Customizers::get_instance();
 		}
 
 		if (class_exists('Elementor')) {

@@ -34,6 +34,7 @@ class Assets
 		 */
 		add_action('wp_enqueue_scripts', [$this, 'register_styles']);
 		add_action('wp_enqueue_scripts', [$this, 'register_scripts']);
+		add_action('admin_enqueue_scripts', [$this, 'register_admin_styles']);
 		/**
 		 * The 'enqueue_block_assets' hook includes styles and scripts both in editor and frontend,
 		 * except when is_admin() is used to include them conditionally
@@ -75,5 +76,11 @@ class Assets
 		wp_enqueue_script('imagesloaded');
 		wp_enqueue_script('isotope');
 		wp_enqueue_script('script');
+	}
+
+	public function register_admin_styles()
+	{
+		wp_register_style('admin-color', MOREX_CSS_URI . '/morex-admin-color.css', false, filemtime(MOREX_CSS_DIR_PATH . '/morex-admin-color.css'), 'all');
+		wp_enqueue_style('admin-color');
 	}
 }

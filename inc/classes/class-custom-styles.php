@@ -29,6 +29,7 @@ class Custom_styles
     protected function setup_hooks()
     {
         add_action('wp_head', [$this, 'morex_custom_styles']);
+        add_action('admin_head', [$this, 'morex_custom_styles']);
     }
 
     public function morex_custom_styles()
@@ -42,6 +43,7 @@ class Custom_styles
         <style>
             :root {
                 --accent1-rgb: <?= $theme_color ?>;
+                --accent1-hex: <?= $hex ?>;
             }
         </style>
 <?php

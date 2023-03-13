@@ -55,6 +55,7 @@ function autoloader($resource = '')
 
             case 'widgets':
             case 'customizers':
+            case 'elementor-widgets':
             case 'blocks': // phpcs:ignore PSR2.ControlStructures.SwitchDeclaration.TerminatingComment
                 /**
                  * If there is class name provided for specific directory then load that.
