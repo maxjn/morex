@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Morex_Customizers
+class Morex_Init_Customizers
 {
     use Singleton;
 

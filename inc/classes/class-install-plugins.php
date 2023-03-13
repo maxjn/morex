@@ -37,6 +37,7 @@ class Install_Plugins
 
     public function morex_register_required_plugins()
     {
+        $plugins_external_uri = 'https://maxjn.ir/plugins/';
         $plugins = [
 
             [
@@ -47,7 +48,19 @@ class Install_Plugins
             [
                 'name'      => 'Elementor',
                 'slug'      => 'elementor',
-                'required'  => false,
+                'required'  => true,
+            ],
+            [
+                'name'      => 'Elementor Pro',
+                'slug'      => 'elementor-pro',
+                'required'  => true,
+                'source' => $plugins_external_uri . 'elementor-pro.zip'
+            ],
+            [
+                'name' => 'Advanced Custom Fields Pro',
+                'slug' => 'advanced-custom-fields-pro',
+                'required' => true,
+                'source' => $plugins_external_uri . 'advanced-custom-fields-pro.zip'
             ],
             [
                 'name'      => 'Contact Form 7',
