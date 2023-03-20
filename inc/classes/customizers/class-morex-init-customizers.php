@@ -20,7 +20,6 @@ class Morex_Init_Customizers
 
     protected function __construct()
     {
-        Generals::get_instance();
         Header::get_instance();
         Display_Sort::get_instance();
         Home::get_instance();

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: morex\n"
-"POT-Creation-Date: 2023-03-02 09:26+0330\n"
-"PO-Revision-Date: 2023-03-02 09:28+0330\n"
+"POT-Creation-Date: 2023-03-15 14:07+0330\n"
+"PO-Revision-Date: 2023-03-15 14:09+0330\n"
 "Last-Translator: \n"
 "Language-Team: maxjn\n"
 "Language: fa_IR\n"
@@ -71,6 +71,14 @@ msgstr "فهرست هدر"
 #: inc/classes/class-menus.php:42
 msgid "Footer Menu"
 msgstr "فهرست فوتر"
+
+#: inc/classes/class-option-page.php:68
+msgid "Theme General Settings"
+msgstr "تنظیمات عمومی قالب"
+
+#: inc/classes/class-option-page.php:69
+msgid "Theme Settings"
+msgstr "تنظیمات  قالب"
 
 #: inc/classes/customizers/class-about.php:39
 msgid "About"
@@ -355,22 +363,6 @@ msgstr ""
 "            </span> توسط <span class=\" px-[3px]\"><a class=\"text-accent1 "
 "hover:font-bold\" href=\"https://www.rtl-theme.com/author/maxjn/products/"
 "\">Maxjn</a></span>© 2023"
-
-#: inc/classes/customizers/class-generals.php:37
-msgid "Theme General Settings"
-msgstr "تنظیمات عمومی قالب"
-
-#: inc/classes/customizers/class-generals.php:45
-msgid "Main Color"
-msgstr "رنگ اصلی"
-
-#: inc/classes/customizers/class-generals.php:84
-msgid "Main Font"
-msgstr "فونت اصلی"
-
-#: inc/classes/customizers/class-generals.php:93
-msgid "Show Loading Animation"
-msgstr "نمایش انیمیشن بارگذاری"
 
 #: inc/classes/customizers/class-header.php:40
 msgid "Header"
@@ -1231,6 +1223,15 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://www.rtl-theme.com/author/maxjn/"
 msgstr ""
+
+#~ msgid "Main Color"
+#~ msgstr "رنگ اصلی"
+
+#~ msgid "Main Font"
+#~ msgstr "فونت اصلی"
+
+#~ msgid "Show Loading Animation"
+#~ msgstr "نمایش انیمیشن بارگذاری"
 
 #~ msgid " by "
 #~ msgstr " توسط "

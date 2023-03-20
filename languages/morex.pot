@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Morex\n"
-"POT-Creation-Date: 2023-03-02 09:26+0330\n"
+"POT-Creation-Date: 2023-03-15 14:07+0330\n"
 "PO-Revision-Date: 2023-02-17 17:23+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -76,6 +76,14 @@ msgstr ""
 
 #: inc/classes/class-menus.php:42
 msgid "Footer Menu"
+msgstr ""
+
+#: inc/classes/class-option-page.php:68
+msgid "Theme General Settings"
+msgstr ""
+
+#: inc/classes/class-option-page.php:69
+msgid "Theme Settings"
 msgstr ""
 
 #: inc/classes/customizers/class-about.php:39
@@ -354,22 +362,6 @@ msgid ""
 "            </span> by <span class=\" px-[3px]\"><a class=\"text-accent1 "
 "hover:font-bold\" href=\"https://www.rtl-theme.com/author/maxjn/products/"
 "\">Maxjn</a></span>© 2023"
-msgstr ""
-
-#: inc/classes/customizers/class-generals.php:37
-msgid "Theme General Settings"
-msgstr ""
-
-#: inc/classes/customizers/class-generals.php:45
-msgid "Main Color"
-msgstr ""
-
-#: inc/classes/customizers/class-generals.php:84
-msgid "Main Font"
-msgstr ""
-
-#: inc/classes/customizers/class-generals.php:93
-msgid "Show Loading Animation"
 msgstr ""
 
 #: inc/classes/customizers/class-header.php:40

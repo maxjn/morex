@@ -34,7 +34,11 @@ class Custom_styles
 
     public function morex_custom_styles()
     {
-        $hex = get_theme_mod('theme_color', '#EE5F38');;
+        if (function_exists('get_field')) {
+            $hex = get_field('main_color', 'options');
+        } else {
+            $hex = '#ee5f38';
+        }
         list($r, $g, $b) = sscanf($hex, "#%02x%02x%02x");
         $theme_color = "$r $g $b";
 
