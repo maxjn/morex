@@ -29,12 +29,16 @@ class MOREX_THEME
 		load_theme_textdomain('morex', MOREX_DIR_PATH . '/languages');
 
 
+
 		// Load class.
 		Install_Plugins::get_instance();
 		Custom_styles::get_instance();
 		Assets::get_instance();
 		Menus::get_instance();
-
+		if (class_exists('Acf')) {
+			ACF_Settings::get_instance();
+			Option_Page::get_instance();
+		}
 		Comment_Form::get_instance();
 		if (class_exists('Kirki')) {
 			Customizers\Morex_Init_Customizers::get_instance();
@@ -52,7 +56,9 @@ class MOREX_THEME
 		/**
 		 * Actions.
 		 */
+
 		add_action('after_setup_theme', [$this, 'setup_theme']);
+		add_filter('upload_mimes', [$this, 'morex_mime_types']);
 	}
 
 	/**
@@ -89,6 +95,7 @@ class MOREX_THEME
 		add_image_size('post-card', 370, 254, true);
 		add_image_size('portfolio-card', 370, 311, true);
 		add_image_size('portfolio-single', 694, 347.96, true);
+
 
 
 		// Add theme support for selective refresh for widgets.
@@ -181,5 +188,23 @@ class MOREX_THEME
 		// if (!isset($content_width)) {
 		// 	$content_width = 1240;
 		// }
+	}
+	/**
+	 * Theme Mime Types
+	 * @see Add a capability to a user role
+	 * @link https://wordpress.stackexchange.com/questions/13413/how-to-add-a-capability-to-a-user-role
+	 *
+	 * @return array
+	 */
+	function morex_mime_types($mimes)
+	{
+		// get the the role object
+		$admin_role = get_role('administrator');
+		// grant the unfiltered_html capability
+		$admin_role->add_cap('unfiltered_html', true);
+
+		$mimes['css']   = 'text/css';
+		$mimes['js']  = 'text/javascript';
+		return $mimes;
 	}
 }

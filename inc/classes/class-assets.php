@@ -44,11 +44,12 @@ class Assets
 
 	public function register_styles()
 	{
+		$font_name = function_exists('get_field') ? get_field('main_font', 'options') : 'vazir';
 		// Register styles.
 		wp_register_style('mobilemenu', MOREX_CSS_URI . '/mobilemenu.css', [], filemtime(MOREX_CSS_DIR_PATH . '/mobilemenu.css'), 'all');
 		wp_register_style('swiper', MOREX_CSS_URI . '/swiper-bundle.min.css', ['mobilemenu'], filemtime(MOREX_CSS_DIR_PATH . '/swiper-bundle.min.css'), 'all');
 		wp_register_style('styles', MOREX_CSS_URI . '/styles.css', ['swiper'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
-		wp_register_style('fonts', MOREX_CSS_URI . '/fonts/primary-' . get_theme_mod('primary_font', 'vazir') . '.css', ['styles'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
+		wp_register_style('fonts', MOREX_CSS_URI . '/fonts/primary-' . $font_name . '.css', ['styles'], filemtime(MOREX_CSS_DIR_PATH . '/styles.css'), 'all');
 		wp_register_style('stylertl', MOREX_CSS_URI . '/style.rtl.css', ['fonts'], filemtime(MOREX_CSS_DIR_PATH . '/style.rtl.css'), 'all');
 
 
@@ -58,6 +59,22 @@ class Assets
 		wp_enqueue_style('styles');
 		wp_enqueue_style('fonts');
 		wp_enqueue_style('stylertl');
+
+		// Add Additional Custome Css Files
+		if (class_exists('Acf')) {
+			if (have_rows('custom_css', 'options')) :
+
+				while (have_rows('custom_css', 'options')) : the_row();
+
+					$file = get_sub_field('style_file', 'options');
+					if ($file) {
+						wp_register_style($file['name'], $file['url'], 1, 'all');
+						wp_enqueue_style($file['name']);
+					}
+
+				endwhile;
+			endif;
+		}
 	}
 
 	public function register_scripts()
@@ -76,6 +93,20 @@ class Assets
 		wp_enqueue_script('imagesloaded');
 		wp_enqueue_script('isotope');
 		wp_enqueue_script('script');
+
+		// Add Additional Custome Js Files
+		if (class_exists('Acf')) {
+			if (have_rows('custom_js', 'options')) :
+
+				while (have_rows('custom_js', 'options')) : the_row();
+
+					$file = get_sub_field('script_file', 'options');
+					wp_register_script($file['name'], $file['url'], 1, 'all');
+					wp_enqueue_script($file['name']);
+
+				endwhile;
+			endif;
+		}
 	}
 
 	public function register_admin_styles()

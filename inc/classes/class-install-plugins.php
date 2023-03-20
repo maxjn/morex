@@ -57,12 +57,6 @@ class Install_Plugins
                 'source' => $plugins_external_uri . 'elementor-pro.zip'
             ],
             [
-                'name' => 'Advanced Custom Fields Pro',
-                'slug' => 'advanced-custom-fields-pro',
-                'required' => true,
-                'source' => $plugins_external_uri . 'advanced-custom-fields-pro.zip'
-            ],
-            [
                 'name'      => 'Contact Form 7',
                 'slug'      => 'contact-form-7',
                 'required'  => false,
@@ -73,10 +67,32 @@ class Install_Plugins
                 'required'  => false,
             ],
             [
+                'name' => 'Advanced Custom Fields Pro',
+                'slug' => 'advanced-custom-fields-pro',
+                'required' => true,
+                'source' => $plugins_external_uri . 'advanced-custom-fields-pro.zip'
+            ],
+            [
                 'name'      => 'Morex Post Type',
                 'slug'      => 'morex-post-type',
-                'source'       => 'https://github.com/maxjn/morex-post-type/archive/refs/heads/main.zip', // The plugin source.
-                'required'  => false,
+                'required'  => true,
+                'source' => $plugins_external_uri . '/morex/morex-post-type.zip'
+            ],
+            [
+                'name' => 'Morex Elementor Widgets',
+                'slug' => 'morex-elementor-widgets',
+                'required' => true,
+                'source' => $plugins_external_uri . '/morex/morex-elementor-widgets.zip'
+            ],
+            [
+                'name' => 'WP Administration Style',
+                'slug' => 'wp-administration-style',
+                'required' => false
+            ],
+            [
+                'name' => 'WP Shamsi',
+                'slug' => 'wp-shamsi',
+                'required' => false
             ]
         ];
 

@@ -1,0 +1,431 @@
+{
+    "key": "group_640ff1c205391",
+    "title": "تنظیمات قالب",
+    "fields": [
+        {
+            "key": "field_640ff1c2a4d47",
+            "label": "عمومی",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_640ff95616391",
+            "label": "اصلی",
+            "name": "madi",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": []
+        },
+        {
+            "key": "field_640ff229a4d49",
+            "label": "رنگ اصلی",
+            "name": "main_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#EE5F38",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_640ff258a4d4a",
+            "label": "فونت",
+            "name": "main_font",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "iran-yekan": "ایران یکان",
+                "aviny": "آوینی",
+                "dastnevis": "دست‌نویس",
+                "droid-naskh": "دروید نسخ",
+                "dubai": "دوبی",
+                "entezar": "انتظار",
+                "helvetica-neue": "هلوتیکا نیو",
+                "iran-sans": "ایران سنس",
+                "lalezar": "لاله‌زار",
+                "myriad": "میریاد",
+                "neirizi": "نی‌ریزی",
+                "palatino-sans": "پالاتینو سنس",
+                "sahel": "ساحل",
+                "shabnam": "شبنم",
+                "vazir": "وزیر",
+                "yekan": "یکان",
+                "damavand": "دماوند",
+                "pinar": "پینار",
+                "estedad": "استعداد",
+                "noora": "نورا"
+            },
+            "default_value": "vazir",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_64100166908fa",
+            "label": "نمایش انیمیشن بارگذاری",
+            "name": "main_loader",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_6410032a095ef",
+            "label": "نمایش دکمه رفتن به بالا",
+            "name": "main_back_to_top",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_6410032c095f0",
+            "label": "نمایش دکمه دارک مود",
+            "name": "main_dark_mode",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.3333",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_641020c3f498f",
+            "label": "هدر و فوتر",
+            "name": "header_footer",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": []
+        },
+        {
+            "key": "field_64102114f4990",
+            "label": "هدر",
+            "name": "elementor_header",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "المنتور",
+            "ui_off_text": "اصلی",
+            "ui": 1
+        },
+        {
+            "key": "field_641022d5f4991",
+            "label": "فوتر",
+            "name": "elementor_footer",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "المنتور",
+            "ui_off_text": "اصلی",
+            "ui": 1
+        },
+        {
+            "key": "field_641022f6f4992",
+            "label": "انتخاب هدر",
+            "name": "selected_elementor_header",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64102114f4990",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "elementor_library"
+            ],
+            "taxonomy": [
+                "elementor_library_type:section"
+            ],
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_64102383f4993",
+            "label": "انتخاب فوتر",
+            "name": "selected_elementor_footer",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_641022d5f4991",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "elementor_library"
+            ],
+            "taxonomy": [
+                "elementor_library_type:section"
+            ],
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_64105f0158d55",
+            "label": "متن کپی رایت",
+            "name": "footer_copy_right",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "تنها در صورت استفاده از فوتر اصلی قابل نمایش است.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<p class=\"flex items-center flex-wrap sm:justify-center dark:text-slate-200\">منتشر شده در راستچین <span class=\"px-[3px] text-paragraph dark:text-white\">\r\n              <svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" stroke=\"text-paragraph\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-heart\">\r\n                <path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\">\r\n                <\/path>\r\n              <\/svg>\r\n            <\/span> توسط <span class=\" px-[3px]\"><a class=\"text-accent1 hover:font-bold\" href=\"#\">Morex<\/a><\/span>© 2023",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6411508ea2b29",
+            "label": "css و js سفارشی",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64115101a2b2b",
+            "label": "استایل های سفارشی",
+            "name": "custom_css",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "فایل جدید",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_641150b9a2b2a",
+                    "label": "فایل استایل",
+                    "name": "style_file",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "css",
+                    "parent_repeater": "field_64115101a2b2b"
+                }
+            ]
+        },
+        {
+            "key": "field_64115703a2b2e",
+            "label": "اسکریپت های سفارشی",
+            "name": "custom_scripts",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "فایل جدید",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64115766a2b2f",
+                    "label": "فایل اسکریپت",
+                    "name": "js_file",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "js",
+                    "parent_repeater": "field_64115703a2b2e"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1678869830
+}
