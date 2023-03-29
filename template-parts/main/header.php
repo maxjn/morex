@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
  */
 ?>
 <!-- Header area start -->
-<header class="absolute w-full left-0 top-0">
+<header class="absolute w-full left-0 top-0 z-10">
     <div class="header__sticky py-5">
         <div class="container mx-auto">
             <div class="flex justify-between items-center">
