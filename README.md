@@ -1,12 +1,16 @@
-![Logo of the project](assets\images\logo.png)
-
 # Morex WordPress Template
 
 A one page wordpress portfolio template...
 
+Morex has a complete Documentation check it [here](https://www.maxjn.ir/rtl-theme/demo/wpmorex/help/). ;)
+
+Live demo [here](https://www.maxjn.ir/rtl-theme/demo/wpmorex/) as well. ;)
+
+Template Package with easy install if you needed [here](https://github.com/maxjn/morex_package).
+
 ## Tested on :
 
-**wordpress v 6.1.1**
+**wordpress v 6.2**
 \_
 
 **php v 7.4**
@@ -22,8 +26,6 @@ _\*\*\*_
 2. Install recommended and required plugins from **Install Plugins** Tab
 
 3. Customize the **theme** for your **needs**
-
-## Developing
 
 ## General Features
 
@@ -55,4 +57,4 @@ _\*\*\*_
 
 ###### Contact
 
-![Logo of the project](screenshot.png)
+![Index](screenshot.png)
