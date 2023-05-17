@@ -6,7 +6,7 @@ Morex has a complete Documentation check it [here](https://www.maxjn.ir/rtl-them
 
 Live demo [here](https://www.maxjn.ir/rtl-theme/demo/wpmorex/) as well. ;)
 
-Template Package with easy install if you needed [here](https://github.com/maxjn/morex_package).
+Template Package with easy install if you needed [here](https://www.maxjn.ir/rtl-theme/demo/wpmorex/morex_package.zip).
 
 ## Tested on :
 
